@@ -254,3 +254,7 @@
 .bg-codliy-primary,
 .bg-codliy-primary .codliy-section__title,
 .bg-codliy-primary .codliy-section__sub { color: #fff; }
+
+// NOTE: the liquid-glass navbar + footer rules live in
+// Modules/Theme/resources/css/app.css (plain CSS so Vite picks them up
+// without a SCSS rebuild). Keep them there — do not duplicate here.

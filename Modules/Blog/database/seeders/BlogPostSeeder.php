@@ -101,7 +101,7 @@ class BlogPostSeeder extends Seeder
         $posts = [
             [
                 'category' => 0, // Engineering
-                'cover' => 'backend.jpg',
+                'cover' => 'software.png',
                 'title' => [
                     'en' => 'Laravel at scale: lessons from shipping a six-figure-user SaaS',
                     'ar' => 'لارافل على نطاق واسع: دروس من إطلاق SaaS بمئات الآلاف من المستخدمين',
@@ -117,7 +117,7 @@ class BlogPostSeeder extends Seeder
             ],
             [
                 'category' => 1, // AI & ML
-                'cover' => 'systems.jpg',
+                'cover' => 'systems.png',
                 'title' => [
                     'en' => 'RAG without hype: a production checklist we actually use',
                     'ar' => 'RAG بدون ضجيج: قائمة فحص إنتاجية نستخدمها فعلًا',
@@ -133,7 +133,7 @@ class BlogPostSeeder extends Seeder
             ],
             [
                 'category' => 2, // Cloud & DevOps
-                'cover' => 'devops.jpg',
+                'cover' => 'devops.png',
                 'title' => [
                     'en' => 'Zero-downtime deploys on a budget: Laravel + AWS in practice',
                     'ar' => 'إطلاق بدون توقف بميزانية محدودة: Laravel + AWS في الممارسة',
@@ -149,7 +149,7 @@ class BlogPostSeeder extends Seeder
             ],
             [
                 'category' => 3, // Product & Design
-                'cover' => 'design.jpg',
+                'cover' => 'design.png',
                 'title' => [
                     'en' => 'The design-to-code handover that actually works',
                     'ar' => 'التسليم من التصميم إلى الكود الذي يعمل حقًا',
@@ -165,7 +165,7 @@ class BlogPostSeeder extends Seeder
             ],
             [
                 'category' => 0, // Engineering
-                'cover' => 'software.jpg',
+                'cover' => 'agile.png',
                 'title' => [
                     'en' => 'Testing strategy for small teams: 80/20 pragmatism',
                     'ar' => 'استراتيجية اختبار للفرق الصغيرة: براغماتية 80/20',
@@ -181,7 +181,7 @@ class BlogPostSeeder extends Seeder
             ],
             [
                 'category' => 2, // Cloud & DevOps
-                'cover' => 'case.jpg',
+                'cover' => 'case.png',
                 'title' => [
                     'en' => 'Security by default: the OWASP items we refuse to skip',
                     'ar' => 'الأمان افتراضيًا: بنود OWASP التي نرفض تجاوزها',

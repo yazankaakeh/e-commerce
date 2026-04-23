@@ -368,3 +368,132 @@
 /* ---------- Utility: remove underline on brand links by default ------ */
 
 .btn-codliy, .btn-codliy-outline { text-decoration: none !important; }
+
+
+/* =========================================================================
+ * Liquid-glass header + footer
+ * -------------------------------------------------------------------------
+ * Applied to the front navbar (`.layout-navbar .landing-navbar`) and the
+ * landing footer (`.landing-footer`). Both get a translucent surface, a
+ * `backdrop-filter: blur()` with a saturation boost (the iOS "liquid glass"
+ * trick — colors read richer through frosted glass), and a hairline
+ * border that keeps the edge crisp over busy content underneath.
+ *
+ * The navbar is pinned to the top (`position: sticky`) so the blur is
+ * actually visible as the page scrolls under it — otherwise there's
+ * nothing behind the nav to blur.
+ *
+ * Tokens declared on `:root` for dark mode, overridden inside
+ * `[data-bs-theme="light"]` for light mode. A `@supports not` fallback
+ * provides a solid-ish color for browsers that don't support
+ * `backdrop-filter`.
+ * =======================================================================*/
+
+:root {
+    --codliy-glass-bg: rgba(10, 31, 77, 0.42);
+    --codliy-glass-border: rgba(255, 255, 255, 0.08);
+    --codliy-glass-shadow: 0 8px 32px rgba(2, 6, 17, 0.35);
+    --codliy-glass-blur: blur(18px) saturate(180%);
+}
+
+nav.layout-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1030; /* above main content, below modals (1055) */
+    will-change: backdrop-filter;
+}
+
+nav.layout-navbar .navbar.landing-navbar {
+    /* Override the vendor `.landing-navbar` translucent-but-no-blur look
+       (see vendor/scss/pages/front/_navbar.scss) so we get real glass. */
+    background-color: var(--codliy-glass-bg) !important;
+    backdrop-filter: var(--codliy-glass-blur);
+    -webkit-backdrop-filter: var(--codliy-glass-blur);
+    border: 1px solid var(--codliy-glass-border) !important;
+    box-shadow: var(--codliy-glass-shadow);
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.landing-footer {
+    position: relative;
+    background-color: var(--codliy-glass-bg) !important;
+    backdrop-filter: var(--codliy-glass-blur);
+    -webkit-backdrop-filter: var(--codliy-glass-blur);
+    border-top: 1px solid var(--codliy-glass-border);
+    box-shadow: 0 -8px 32px rgba(2, 6, 17, 0.28);
+}
+
+/* Vendor `.bg-body` on the <footer> element would paint solidly on top of
+   our translucent token. Null it out. */
+.landing-footer.bg-body {
+    background-color: var(--codliy-glass-bg) !important;
+}
+
+/* Dim the decorative footer bg image so it reads as subtle texture behind
+   the glass pane instead of fighting it. */
+.landing-footer .footer-bg {
+    opacity: 0.28;
+    mix-blend-mode: screen;
+}
+
+/* Fallback for browsers without backdrop-filter. */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    nav.layout-navbar .navbar.landing-navbar,
+    .landing-footer {
+        background-color: rgba(10, 31, 77, 0.92) !important;
+    }
+}
+
+/* ---------- Light-mode glass --------------------------------------------
+   Flip the palette so the nav/footer read as a frosted white pane over
+   the page instead of a smoky blue one. The footer's vendor theme is
+   painted for a dark background (white text, white social icons) so we
+   also need to re-anchor its text colors on light-mode tokens. */
+
+[data-bs-theme="light"]:not([data-layout-mode="dark_mode"]),
+[data-layout-mode="light_mode"] {
+    --codliy-glass-bg: rgba(255, 255, 255, 0.58);
+    --codliy-glass-border: rgba(10, 31, 77, 0.08);
+    --codliy-glass-shadow: 0 8px 32px rgba(10, 31, 77, 0.08);
+}
+
+[data-bs-theme="light"]:not([data-layout-mode="dark_mode"]) nav.layout-navbar .navbar.landing-navbar,
+[data-layout-mode="light_mode"] nav.layout-navbar .navbar.landing-navbar {
+    border-color: var(--codliy-glass-border) !important;
+}
+
+[data-bs-theme="light"]:not([data-layout-mode="dark_mode"]) .landing-footer,
+[data-layout-mode="light_mode"] .landing-footer {
+    color: var(--bs-heading-color);
+}
+
+[data-bs-theme="light"]:not([data-layout-mode="dark_mode"]) .landing-footer .footer-text,
+[data-bs-theme="light"]:not([data-layout-mode="dark_mode"]) .landing-footer .footer-bottom-text,
+[data-layout-mode="light_mode"] .landing-footer .footer-text,
+[data-layout-mode="light_mode"] .landing-footer .footer-bottom-text {
+    color: var(--bs-secondary-color);
+}
+
+[data-bs-theme="light"]:not([data-layout-mode="dark_mode"]) .landing-footer .footer-link,
+[data-bs-theme="light"]:not([data-layout-mode="dark_mode"]) .landing-footer .footer-title,
+[data-bs-theme="light"]:not([data-layout-mode="dark_mode"]) .landing-footer a.text-white,
+[data-layout-mode="light_mode"] .landing-footer .footer-link,
+[data-layout-mode="light_mode"] .landing-footer .footer-title,
+[data-layout-mode="light_mode"] .landing-footer a.text-white {
+    color: var(--bs-heading-color) !important;
+}
+
+[data-bs-theme="light"]:not([data-layout-mode="dark_mode"]) .landing-footer .footer-bg,
+[data-layout-mode="light_mode"] .landing-footer .footer-bg {
+    opacity: 0.14;
+    mix-blend-mode: multiply; /* darken instead of lighten in light mode */
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    [data-bs-theme="light"]:not([data-layout-mode="dark_mode"]) nav.layout-navbar .navbar.landing-navbar,
+    [data-bs-theme="light"]:not([data-layout-mode="dark_mode"]) .landing-footer,
+    [data-layout-mode="light_mode"] nav.layout-navbar .navbar.landing-navbar,
+    [data-layout-mode="light_mode"] .landing-footer {
+        background-color: rgba(255, 255, 255, 0.94) !important;
+    }
+}
