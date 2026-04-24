@@ -46,7 +46,9 @@ class PortfolioSeeder extends Seeder
             // for readability — flatten to a single newline-joined string
             // per locale before persisting.
             foreach (['features', 'challenges', 'solutions', 'results'] as $listField) {
-                if (! isset($entry[$listField]) || $entry[$listField] === null) {
+                // `isset()` already rejects null values, so one guard is enough —
+                // PHPStan flagged the additional `=== null` check as dead code.
+                if (! isset($entry[$listField])) {
                     continue;
                 }
 
