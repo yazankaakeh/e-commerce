@@ -247,24 +247,47 @@ class PortfolioRepository implements PortfolioInterface
             ->paginate($perPage);
     }
 
+    /**
+     * Distinct category labels for the current request locale.
+     *
+     * The `category` column is a Spatie translatable JSON — e.g. for one
+     * portfolio we'll have `{"en": "Publishing", "ar": "نشر", "tr": "Yayıncılık"}`.
+     * Previously this method collected ALL locale values, which showed up
+     * as three separate filter chips per portfolio in the front-end.
+     *
+     * We now return just the current locale's label (with a fallback
+     * chain to the first non-empty translation when the active locale
+     * happens to be empty for a given entry).
+     *
+     * @return array<int, string>
+     */
     public function getCategories(): array
     {
+        $locale = app()->getLocale();
+        $fallback = config('app.fallback_locale', 'en');
+
         $portfolios = Portfolio::active()->get(['category']);
         $categories = [];
 
         foreach ($portfolios as $portfolio) {
             $translations = $portfolio->getTranslations('category');
-            if (! empty($translations)) {
-                foreach (array_keys($translations) as $lang) {
-                    $cat = $portfolio->getTranslation('category', $lang);
-                    if ($cat && ! in_array($cat, $categories)) {
-                        $categories[] = $cat;
-                    }
-                }
+
+            if (empty($translations)) {
+                continue;
+            }
+
+            // Prefer the active locale, fall back to the app fallback
+            // locale, finally accept the first non-empty translation.
+            $label = $translations[$locale]
+                ?? $translations[$fallback]
+                ?? (collect($translations)->filter()->first() ?: null);
+
+            if ($label && ! in_array($label, $categories, true)) {
+                $categories[] = $label;
             }
         }
 
-        return array_unique($categories);
+        return $categories;
     }
 
     public function search(string $query, int $perPage = 12): LengthAwarePaginator

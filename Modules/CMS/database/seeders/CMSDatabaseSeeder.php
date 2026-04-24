@@ -11,8 +11,12 @@ class CMSDatabaseSeeder extends Seeder
      */
     public function run(): void
     {
+        // Order matters: LandingPage first (it sets up the homepage panels
+        // + CMS pages that other modules may rely on), then Portfolio so
+        // the studio's showcase work is available on /portfolio.
         $this->call([
             LandingPageSeeder::class,
+            PortfolioSeeder::class,
         ]);
     }
 }

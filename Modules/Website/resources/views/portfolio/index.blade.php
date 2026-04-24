@@ -176,24 +176,22 @@
         </div>
     </section>
 
-    {{-- CTA — uses .bg-codliy-primary which always renders as the solid
-         brand gradient (admin's primary → accent) regardless of dark/light. --}}
-    <section class="codliy-section bg-codliy-primary">
+    {{-- CTA — uses `.bg-codliy-soft`, a primary-tinted pane that adapts per
+         mode (faint glow in dark, soft tint in light). The kicker/title
+         colors come from Theme Settings via --codliy-primary / --codliy-heading,
+         so changing the admin primary color changes this whole section. --}}
+    <section class="codliy-section bg-codliy-soft">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 text-center">
-                    <div class="codliy-section__kicker" style="color: rgba(255,255,255,0.7);">
-                        {{ __('Start a Project') }}
-                    </div>
-                    <h2 class="codliy-section__title text-white mb-3">
-                        {{ __('Have a project in mind?') }}
-                    </h2>
-                    <p class="codliy-section__sub mb-4" style="color: rgba(255,255,255,0.85);">
+                    <div class="codliy-section__kicker">{{ __('Start a Project') }}</div>
+                    <h2 class="codliy-section__title mb-3">{{ __('Have a project in mind?') }}</h2>
+                    <p class="codliy-section__sub mx-auto mb-4">
                         {{ __("Let's work together to bring your ideas to life.") }}
                     </p>
                     <a href="{{ route('landing.home') }}#contactUs"
-                       class="btn btn-light btn-lg fw-medium">
-                        <i class="ti tabler-message me-2"></i>{{ __('Get in Touch') }}
+                       class="btn-codliy px-4 py-2 d-inline-flex align-items-center gap-2">
+                        <i class="ti tabler-message"></i>{{ __('Get in Touch') }}
                     </a>
                 </div>
             </div>

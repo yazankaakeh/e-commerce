@@ -44,6 +44,34 @@
 .text-codliy-mute    { color: var(--codliy-text-mute) !important; }
 .border-codliy       { border: 1px solid rgba(255, 255, 255, 0.08) !important; }
 
+/* -------------------------------------------------------------------------
+ * .bg-codliy-soft — a primary-tinted pane that adapts by mode.
+ * Unlike `.bg-codliy-primary` (always a bold solid gradient), this picks
+ * the admin's primary color from Theme Settings, drops its alpha low, and
+ * layers it as a soft wash so the section reads as "on-brand" without
+ * fighting the page. Dark mode = faint glow over the dark surface;
+ * light mode = faint tint over white. Text stays readable via codliy
+ * text tokens the vendor theme already swaps per mode.
+ * ---------------------------------------------------------------------- */
+.bg-codliy-soft {
+    background:
+        radial-gradient(circle at 80% 20%, rgba(var(--codliy-primary-rgb, 0, 86, 248), 0.22), transparent 60%),
+        radial-gradient(circle at 10% 90%, rgba(var(--codliy-accent-rgb, 59, 130, 246), 0.14), transparent 55%),
+        rgba(var(--codliy-primary-rgb, 0, 86, 248), 0.06) !important;
+    border-top: 1px solid var(--codliy-glass-border, rgba(255, 255, 255, 0.08));
+    border-bottom: 1px solid var(--codliy-glass-border, rgba(255, 255, 255, 0.08));
+}
+
+/* In light mode the same tokens exist, but the pane needs slightly more
+   weight to read as a distinct section over a white page background. */
+[data-bs-theme="light"]:not([data-layout-mode="dark_mode"]) .bg-codliy-soft,
+[data-layout-mode="light_mode"] .bg-codliy-soft {
+    background:
+        radial-gradient(circle at 80% 20%, rgba(var(--codliy-primary-rgb, 0, 86, 248), 0.14), transparent 60%),
+        radial-gradient(circle at 10% 90%, rgba(var(--codliy-accent-rgb, 59, 130, 246), 0.10), transparent 55%),
+        rgba(var(--codliy-primary-rgb, 0, 86, 248), 0.04) !important;
+}
+
 /* ---------- Brand buttons --------------------------------------------- */
 
 .btn-codliy {
