@@ -356,13 +356,15 @@
             box-shadow: 0 4px 12px rgba(var(--codliy-primary-rgb, 0, 86, 248), 0.3);
         }
 
-        /* Card Enhancements */
+        /* Card Enhancements — use the same glass-border token the nav/footer
+           use so dark-mode cards get a bright hairline and light-mode cards
+           get a muted navy hairline. One source of truth. */
         .card {
-            border: 1px solid rgba(9, 44, 76, 0.08);
+            border: 1px solid var(--codliy-glass-border, rgba(9, 44, 76, 0.08));
         }
 
         .card:hover {
-            box-shadow: 0 10px 40px rgba(9, 44, 76, 0.1);
+            box-shadow: 0 10px 40px rgba(var(--codliy-primary-rgb, 0, 86, 248), 0.12);
         }
 
         .card-header.bg-primary {
@@ -965,14 +967,19 @@
         </div>
     </section>
 
-    {{-- Related Projects --}}
+    {{-- Related Projects — use `bg-body` (respects dark/light mode) instead of
+         the always-light `bg-light`, and swap the "More Work" badge + heading
+         to theme-aware Codliy tokens so the section lines up with the blog
+         and portfolio index visually. --}}
     @if($relatedPortfolios->count() > 0)
-        <section class="section-py bg-light">
+        <section class="codliy-section">
             <div class="container">
                 <div class="text-center mb-5">
-                    <span class="badge bg-primary rounded-pill px-3 py-2 mb-3">{{ __('More Work') }}</span>
-                    <h2 class="display-6 fw-bold">{{ __('Related Projects') }}</h2>
-                    <p class="text-muted">{{ __('Explore more of our work in similar categories') }}</p>
+                    <div class="codliy-section__kicker">{{ __('More Work') }}</div>
+                    <h2 class="codliy-section__title">{{ __('Related Projects') }}</h2>
+                    <p class="codliy-section__sub mx-auto">
+                        {{ __('Explore more of our work in similar categories.') }}
+                    </p>
                 </div>
 
                 <div class="row g-4">

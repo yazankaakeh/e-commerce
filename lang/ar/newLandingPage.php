@@ -10,6 +10,8 @@ return [
         'home' => 'الرئيسية',
         'features' => 'خدماتنا',
         'theHow' => 'آلية العمل',
+        'portfolio' => 'أعمالنا',
+        'blog' => 'المدونة',
         'contactUs' => 'تواصل معنا',
         'loginRegister' => 'تسجيل الدخول',
     ],
@@ -102,6 +104,8 @@ return [
             'title' => 'الصفحات',
             'features' => 'خدماتنا',
             'theHow' => 'آلية العمل',
+            'portfolio' => 'أعمالنا',
+            'blog' => 'المدونة',
             'contactUs' => 'تواصل معنا',
         ],
         'products' => [

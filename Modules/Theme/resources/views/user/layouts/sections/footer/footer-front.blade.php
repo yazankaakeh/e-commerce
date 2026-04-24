@@ -47,6 +47,16 @@
                             </a>
                         </li>
                         <li class="mb-4">
+                            <a href="{{ route('portfolio.index') }}" class="footer-link">
+                                {{trans('newLandingPage.footer.pages.portfolio')}}
+                            </a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="{{ route('blog.index') }}" class="footer-link">
+                                {{trans('newLandingPage.footer.pages.blog')}}
+                            </a>
+                        </li>
+                        <li class="mb-4">
                             <a href="#contactUs" class="footer-link">
                                 {{trans('newLandingPage.footer.pages.contactUs')}}
                             </a>

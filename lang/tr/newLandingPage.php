@@ -10,6 +10,8 @@ return [
         'home' => 'Ana Sayfa',
         'features' => 'Hizmetler',
         'theHow' => 'Süreç',
+        'portfolio' => 'Portföy',
+        'blog' => 'Blog',
         'contactUs' => 'İletişim',
         'loginRegister' => 'Müşteri Girişi',
     ],
@@ -102,6 +104,8 @@ return [
             'title' => 'Sayfalar',
             'features' => 'Hizmetler',
             'theHow' => 'Süreç',
+            'portfolio' => 'Portföy',
+            'blog' => 'Blog',
             'contactUs' => 'İletişim',
         ],
         'products' => [

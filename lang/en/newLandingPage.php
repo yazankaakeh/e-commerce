@@ -10,6 +10,8 @@ return [
         'home' => 'Home',
         'features' => 'Services',
         'theHow' => 'Process',
+        'portfolio' => 'Portfolio',
+        'blog' => 'Blog',
         'contactUs' => 'Contact',
         'loginRegister' => 'Client Login',
     ],
@@ -102,6 +104,8 @@ return [
             'title' => 'Pages',
             'features' => 'Services',
             'theHow' => 'Process',
+            'portfolio' => 'Portfolio',
+            'blog' => 'Blog',
             'contactUs' => 'Contact',
         ],
         'products' => [

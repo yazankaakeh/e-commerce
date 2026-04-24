@@ -3,6 +3,11 @@
     $currentRouteName = Route::currentRouteName();
     $activeRoutes = ['front-pages-pricing', 'front-pages-payment', 'front-pages-checkout', 'front-pages-help-center'];
     $activeClass = in_array($currentRouteName, $activeRoutes) ? 'active' : '';
+
+    // Highlight the top-level nav item when the user is deep inside its
+    // section (e.g. on blog.show the "Blog" link should still read active).
+    $isBlogActive = str_starts_with((string) $currentRouteName, 'blog.');
+    $isPortfolioActive = str_starts_with((string) $currentRouteName, 'portfolio.');
 @endphp
 
 @section('vendor-script')
@@ -50,6 +55,18 @@
                     <li class="nav-item">
                         <a class="nav-link fw-medium" href="#theHow">
                             {{trans('newLandingPage.navbar.theHow')}}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium {{ $isPortfolioActive ? 'active' : '' }}"
+                           href="{{ route('portfolio.index') }}">
+                            {{trans('newLandingPage.navbar.portfolio')}}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-medium {{ $isBlogActive ? 'active' : '' }}"
+                           href="{{ route('blog.index') }}">
+                            {{trans('newLandingPage.navbar.blog')}}
                         </a>
                     </li>
                     <li class="nav-item">

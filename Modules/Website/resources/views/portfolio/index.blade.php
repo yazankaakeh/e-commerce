@@ -1,26 +1,42 @@
+@php
+    use Modules\Theme\Helpers\Helpers;
+    $configData = Helpers::appClasses();
+    $locale = app()->getLocale();
+@endphp
+
 @extends('theme::user.layouts.layoutFront')
 
 @section('title', __('Portfolio'))
 
 @section('content')
-    {{-- Hero Section --}}
-    <section class="section-py bg-primary first-section-pt">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center py-4">
-                    <span class="badge bg-white text-primary mb-3">{{ __('Our Work') }}</span>
-                    <h1 class="display-5 fw-bold text-white mb-3">{{ __('Portfolio') }}</h1>
-                    <p class="lead text-white opacity-75 mb-4">{{ __('Explore our latest projects and see how we bring ideas to life') }}</p>
-
-                    {{-- Search --}}
-                    <form action="{{ route('portfolio.index') }}" method="GET" class="mx-auto" style="max-width: 500px;">
-                        <div class="input-group input-group-lg">
-                            <span class="input-group-text bg-white border-0">
-                                <i class="ti tabler-search text-muted"></i>
+    {{-- Portfolio hero — same Codliy hero pattern used by blog/index so
+         the theme-settings primary color + radius + fonts flow through. --}}
+    <section class="codliy-hero position-relative">
+        <div class="container position-relative">
+            <div class="row align-items-end g-4">
+                <div class="col-lg-8">
+                    <div class="codliy-hero__kicker">CODLIY &middot; PORTFOLIO</div>
+                    <h1 class="codliy-hero__title mb-3">
+                        {{ __('Selected work from the studio') }}
+                    </h1>
+                    <p class="codliy-hero__sub mb-0">
+                        {{ __('Explore our latest projects and see how we bring ideas to life.') }}
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <form action="{{ route('portfolio.index') }}" method="GET" class="position-relative">
+                        <div class="input-group input-group-merge codliy-card p-2">
+                            <span class="input-group-text bg-transparent border-0 text-codliy-mute">
+                                <i class="ti tabler-search"></i>
                             </span>
-                            <input type="text" name="search" class="form-control border-0"
-                                   placeholder="{{ __('Search projects...') }}" value="{{ $search ?? '' }}">
-                            <button type="submit" class="btn btn-dark">{{ __('Search') }}</button>
+                            <input type="text" name="search"
+                                   class="form-control bg-transparent border-0 text-codliy-soft"
+                                   placeholder="{{ __('Search projects...') }}"
+                                   value="{{ $search ?? '' }}"
+                                   style="color: var(--codliy-text-soft);">
+                            <button type="submit" class="btn-codliy px-3 py-1">
+                                <i class="ti tabler-arrow-right"></i>
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -28,18 +44,19 @@
         </div>
     </section>
 
-    {{-- Category Filter --}}
+    {{-- Category filter — chip row. Uses codliy outline buttons so the
+         pill shape and active-state color obey theme_settings.primary_color. --}}
     @if(count($categories) > 0)
-        <section class="py-4 bg-body border-bottom">
+        <section class="codliy-section py-4">
             <div class="container">
                 <div class="d-flex flex-wrap justify-content-center gap-2">
                     <a href="{{ route('portfolio.index') }}"
-                       class="btn {{ !$category ? 'btn-primary' : 'btn-label-primary' }} rounded-pill">
+                       class="{{ !$category ? 'btn-codliy' : 'btn-codliy-outline' }} rounded-pill px-3 py-2">
                         <i class="ti tabler-apps me-1"></i>{{ __('All') }}
                     </a>
                     @foreach($categories as $cat)
                         <a href="{{ route('portfolio.index', ['category' => $cat]) }}"
-                           class="btn {{ $category === $cat ? 'btn-primary' : 'btn-label-secondary' }} rounded-pill">
+                           class="{{ $category === $cat ? 'btn-codliy' : 'btn-codliy-outline' }} rounded-pill px-3 py-2">
                             {{ $cat }}
                         </a>
                     @endforeach
@@ -48,21 +65,21 @@
         </section>
     @endif
 
-    {{-- Active Filter Info --}}
+    {{-- Active filter banner --}}
     @if($search || $category)
-        <section class="py-3 bg-label-secondary">
+        <section class="py-3">
             <div class="container">
-                <div class="d-flex justify-content-between align-items-center">
-                    <div>
-                        <i class="ti tabler-filter me-2"></i>
+                <div class="codliy-card d-flex flex-wrap justify-content-between align-items-center gap-3">
+                    <div class="text-codliy-soft">
+                        <i class="ti tabler-filter me-2 text-codliy-primary"></i>
                         @if($search)
-                            {{ __('Results for') }}: <strong>"{{ $search }}"</strong>
+                            {{ __('Results for') }}: <strong class="text-codliy-soft">"{{ $search }}"</strong>
                         @else
-                            {{ __('Category') }}: <strong>{{ $category }}</strong>
+                            {{ __('Category') }}: <strong class="text-codliy-soft">{{ $category }}</strong>
                         @endif
-                        <span class="text-muted ms-2">({{ $portfolios->total() }} {{ __('projects') }})</span>
+                        <span class="text-codliy-mute ms-2">({{ $portfolios->total() }} {{ __('projects') }})</span>
                     </div>
-                    <a href="{{ route('portfolio.index') }}" class="btn btn-sm btn-label-danger">
+                    <a href="{{ route('portfolio.index') }}" class="btn-codliy-outline px-3 py-1 rounded-pill">
                         <i class="ti tabler-x me-1"></i>{{ __('Clear Filter') }}
                     </a>
                 </div>
@@ -70,62 +87,67 @@
         </section>
     @endif
 
-    {{-- Projects Grid --}}
-    <section class="section-py bg-body">
+    {{-- Projects grid --}}
+    <section class="codliy-section">
         <div class="container">
             @if($portfolios->count() > 0)
                 <div class="row g-4">
                     @foreach($portfolios as $portfolio)
                         <div class="col-sm-6 col-lg-4">
-                            <div class="card h-100">
+                            <article class="codliy-card h-100 p-0 overflow-hidden d-flex flex-column">
                                 <div class="position-relative">
                                     @if($portfolio->getFirstMediaUrl('featured_image'))
                                         <img src="{{ $portfolio->getFirstMediaUrl('featured_image') }}"
-                                             class="card-img-top"
-                                             style="height: 220px; object-fit: cover;"
-                                             alt="{{ $portfolio->getTranslation('title', $locale) }}">
+                                             alt="{{ $portfolio->getTranslation('title', $locale) }}"
+                                             class="w-100"
+                                             style="height: 220px; object-fit: cover;">
                                     @else
-                                        <div class="card-img-top bg-label-primary d-flex align-items-center justify-content-center"
+                                        <div class="d-flex align-items-center justify-content-center bg-codliy-solid"
                                              style="height: 220px;">
-                                            <i class="ti tabler-photo display-3 text-primary"></i>
+                                            <i class="ti tabler-photo display-3 text-codliy-mute"></i>
                                         </div>
                                     @endif
                                     @if($portfolio->is_featured)
-                                        <span class="badge bg-warning position-absolute top-0 end-0 m-3">
+                                        <span class="badge position-absolute top-0 end-0 m-3 bg-codliy-primary">
                                             <i class="ti tabler-star-filled me-1"></i>{{ __('Featured') }}
                                         </span>
                                     @endif
                                 </div>
-                                <div class="card-body">
+                                <div class="p-4 flex-grow-1 d-flex flex-column">
                                     @if($portfolio->getTranslation('category', $locale))
-                                        <span class="badge bg-label-primary mb-2">
+                                        <div class="codliy-card__eyebrow mb-2">
                                             {{ $portfolio->getTranslation('category', $locale) }}
-                                        </span>
+                                        </div>
                                     @endif
-                                    <h5 class="card-title">
-                                        <a href="{{ route('portfolio.show', $portfolio->slug) }}" class="text-body stretched-link">
+                                    <h3 class="codliy-card__title mb-2">
+                                        <a href="{{ route('portfolio.show', $portfolio->slug) }}"
+                                           class="stretched-link text-decoration-none"
+                                           style="color: inherit;">
                                             {{ $portfolio->getTranslation('title', $locale) }}
                                         </a>
-                                    </h5>
+                                    </h3>
                                     @if($portfolio->getTranslation('short_description', $locale))
-                                        <p class="card-text text-muted small mb-0">
-                                            {{ Str::limit($portfolio->getTranslation('short_description', $locale), 100) }}
+                                        <p class="codliy-card__body mb-3">
+                                            {{ Str::limit($portfolio->getTranslation('short_description', $locale), 110) }}
                                         </p>
                                     @endif
-                                </div>
-                                @if($portfolio->technologies && count($portfolio->technologies) > 0)
-                                    <div class="card-footer bg-transparent pt-0">
-                                        <div class="d-flex flex-wrap gap-1">
+
+                                    @if($portfolio->technologies && count($portfolio->technologies) > 0)
+                                        <div class="mt-auto d-flex flex-wrap gap-1">
                                             @foreach(array_slice($portfolio->technologies, 0, 3) as $tech)
-                                                <span class="badge bg-label-secondary">{{ $tech }}</span>
+                                                <span class="badge bg-transparent text-codliy-mute border border-codliy">
+                                                    {{ $tech }}
+                                                </span>
                                             @endforeach
                                             @if(count($portfolio->technologies) > 3)
-                                                <span class="badge bg-label-secondary">+{{ count($portfolio->technologies) - 3 }}</span>
+                                                <span class="badge bg-transparent text-codliy-mute border border-codliy">
+                                                    +{{ count($portfolio->technologies) - 3 }}
+                                                </span>
                                             @endif
                                         </div>
-                                    </div>
-                                @endif
-                            </div>
+                                    @endif
+                                </div>
+                            </article>
                         </div>
                     @endforeach
                 </div>
@@ -137,16 +159,16 @@
                     </div>
                 @endif
             @else
-                {{-- Empty State --}}
-                <div class="text-center py-5">
+                {{-- Empty state --}}
+                <div class="codliy-card text-center py-5">
                     <div class="mb-4">
-                        <span class="badge badge-center rounded-pill bg-label-secondary p-5">
-                            <i class="ti tabler-folder-off display-4"></i>
-                        </span>
+                        <i class="ti tabler-folder-off display-4 text-codliy-mute"></i>
                     </div>
-                    <h4>{{ __('No projects found') }}</h4>
-                    <p class="text-muted mb-4">{{ __('Try adjusting your search or filter to find what you\'re looking for.') }}</p>
-                    <a href="{{ route('portfolio.index') }}" class="btn btn-primary">
+                    <h4 class="codliy-card__title mb-2">{{ __('No projects found') }}</h4>
+                    <p class="codliy-card__body mb-4">
+                        {{ __("Try adjusting your search or filter to find what you're looking for.") }}
+                    </p>
+                    <a href="{{ route('portfolio.index') }}" class="btn-codliy px-4 py-2 d-inline-block">
                         <i class="ti tabler-refresh me-1"></i>{{ __('View All Projects') }}
                     </a>
                 </div>
@@ -154,15 +176,23 @@
         </div>
     </section>
 
-    {{-- CTA Section --}}
-    <section class="section-py bg-label-primary">
+    {{-- CTA — uses .bg-codliy-primary which always renders as the solid
+         brand gradient (admin's primary → accent) regardless of dark/light. --}}
+    <section class="codliy-section bg-codliy-primary">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6 text-center">
-                    <span class="badge bg-primary mb-3">{{ __('Start a Project') }}</span>
-                    <h3 class="mb-3">{{ __('Have a project in mind?') }}</h3>
-                    <p class="text-muted mb-4">{{ __("Let's work together to bring your ideas to life") }}</p>
-                    <a href="{{ route('landing.home') }}#contactUs" class="btn btn-primary btn-lg">
+                    <div class="codliy-section__kicker" style="color: rgba(255,255,255,0.7);">
+                        {{ __('Start a Project') }}
+                    </div>
+                    <h2 class="codliy-section__title text-white mb-3">
+                        {{ __('Have a project in mind?') }}
+                    </h2>
+                    <p class="codliy-section__sub mb-4" style="color: rgba(255,255,255,0.85);">
+                        {{ __("Let's work together to bring your ideas to life.") }}
+                    </p>
+                    <a href="{{ route('landing.home') }}#contactUs"
+                       class="btn btn-light btn-lg fw-medium">
                         <i class="ti tabler-message me-2"></i>{{ __('Get in Touch') }}
                     </a>
                 </div>
