@@ -397,7 +397,7 @@
                 </div>
             </div>
 
-            <!-- Bagisto Drawer Integration -->
+            <!-- Contrast Drawer Integration -->
             <x-shop::drawer
                 position="left"
                 width="400px"

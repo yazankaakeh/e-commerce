@@ -806,7 +806,7 @@ return [
         'index' => [
             'create-administrator' => [
                 'admin' => 'Administrator',
-                'bagisto' => 'Bagisto',
+                'bagisto' => 'Contrast',
                 'confirm-password' => 'Passwort bestätigen',
                 'email' => 'E-Mail',
                 'email-address' => 'admin@example.com',
@@ -821,7 +821,7 @@ return [
                 'application-name' => 'Anwendungsname',
                 'argentine-peso' => 'Argentinischer Peso (ARS)',
                 'australian-dollar' => 'Australischer Dollar (AUD)',
-                'bagisto' => 'Bagisto',
+                'bagisto' => 'Contrast',
                 'bangladeshi-taka' => 'Bangladeschischer Taka (BDT)',
                 'bahraini-dinar' => 'Bahreinse Dinar (BHD)',
                 'brazilian-real' => 'Brasilianischer Real (BRL)',
@@ -914,25 +914,25 @@ return [
             ],
 
             'installation-processing' => [
-                'bagisto' => 'Installation Bagisto',
-                'bagisto-info' => 'Erstellung der Datenbanktabellen, dies kann einige Momente dauern',
+                'bagisto' => 'Contrast',
+                'contrast-info' => 'Erstellung der Datenbanktabellen, dies kann einige Momente dauern',
                 'title' => 'Installation',
             ],
 
             'installation-completed' => [
                 'admin-panel' => 'Admin-Panel',
-                'bagisto-forums' => 'Bagisto Forum',
+                'contrast-forums' => 'Contrast Forum',
                 'customer-panel' => 'Kundenpanel',
-                'explore-bagisto-extensions' => 'Erkunden Sie Bagisto-Erweiterungen',
+                'explore-contrast-extensions' => 'Erkunden Sie Contrast-Erweiterungen',
                 'title' => 'Installation abgeschlossen',
-                'title-info' => 'Bagisto wurde erfolgreich auf Ihrem System installiert.',
+                'title-info' => 'Contrast wurde erfolgreich auf Ihrem System installiert.',
             ],
 
             'ready-for-installation' => [
                 'create-database-tables' => 'Datenbanktabellen erstellen',
                 'drop-existing-tables' => 'Vorhandene Tabellen löschen',
                 'install' => 'Installation',
-                'install-info' => 'Bagisto zur Installation',
+                'install-info' => 'Contrast zur Installation',
                 'install-info-button' => 'Klicke auf die Schaltfläche unten, um',
                 'populate-database-tables' => 'Datenbanktabellen füllen',
                 'start-installation' => 'Installation starten',
@@ -944,8 +944,8 @@ return [
                 'locale' => 'Lokale',
                 'main' => 'Start',
                 'select-locale' => 'Wähle Lokale',
-                'title' => 'Deine Bagisto-Installation',
-                'welcome-title' => 'Willkommen bei Bagisto',
+                'title' => 'Deine Contrast-Installation',
+                'welcome-title' => 'Willkommen bei Contrast',
             ],
 
             'server-requirements' => [
@@ -973,9 +973,9 @@ return [
 
             'arabic' => 'Arabisch',
             'back' => 'Zurück',
-            'bagisto' => 'Bagisto',
-            'bagisto-info' => 'Ein Gemeinschaftsprojekt von',
-            'bagisto-logo' => 'Bagisto Logo',
+            'bagisto' => 'Contrast',
+            'contrast-info' => 'Ein Gemeinschaftsprojekt von',
+            'contrast-logo' => 'Contrast Logo',
             'bengali' => 'Bengalisch',
             'catalan' => 'Katalanisch',
             'chinese' => 'Chinesisch',
@@ -987,7 +987,7 @@ return [
             'hebrew' => 'Hebräisch',
             'hindi' => 'Hindi',
             'indonesian' => 'Indonesisch',
-            'installation-description' => 'Die Installation von Bagisto umfasst in der Regel mehrere Schritte. Hier ist eine allgemeine Übersicht über den Installationsprozess für Bagisto',
+            'installation-description' => 'Die Installation von Contrast umfasst in der Regel mehrere Schritte. Hier ist eine allgemeine Übersicht über den Installationsprozess für Contrast',
             'installation-info' => 'Wir freuen uns, Sie hier zu sehen!',
             'installation-title' => 'Willkommen zur Installation',
             'italian' => 'Italienisch',
@@ -999,10 +999,10 @@ return [
             'russian' => 'Russisch',
             'sinhala' => 'Singhalesisch',
             'spanish' => 'Spanisch',
-            'title' => 'Bagisto Installer',
+            'title' => 'Contrast Installer',
             'turkish' => 'Türkisch',
             'ukrainian' => 'Ukrainisch',
-            'webkul' => 'Webkul',
+            'webkul' => 'Contrast',
         ],
     ],
 ];

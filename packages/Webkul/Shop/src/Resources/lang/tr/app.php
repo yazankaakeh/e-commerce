@@ -5,10 +5,10 @@ return [
         'forgot-password' => [
             'already-sent' => 'Şifre sıfırlama e-postası zaten gönderildi.',
             'back' => 'Giriş sayfasına geri dön?',
-            'bagisto' => 'Bagisto',
+            'bagisto' => 'Contrast',
             'email' => 'E-posta',
             'email-not-exist' => 'Bu e-posta adresiyle kayıtlı bir kullanıcı bulunamadı.',
-            'footer' => '© Telif Hakkı 2010 - :current_year, Webkul Software (Hindistan\'da kayıtlı). Tüm hakları saklıdır.',
+            'footer' => '© Telif Hakkı 2010 - :current_year, Contrast Software (Hindistan\'da kayıtlı). Tüm hakları saklıdır.',
             'forgot-password-text' => 'Parolanızı unuttuysanız, e-posta adresinizi girerek kurtarabilirsiniz.',
             'page-title' => 'Parolanızı mı unuttunuz?',
             'reset-link-sent' => 'Şifre sıfırlama bağlantısı e-posta adresinize gönderildi.',
@@ -19,21 +19,21 @@ return [
 
         'reset-password' => [
             'back-link-title' => 'Giriş Sayfasına Geri Dön',
-            'bagisto' => 'Bagisto',
+            'bagisto' => 'Contrast',
             'confirm-password' => 'Şifreyi Onayla',
             'email' => 'Kayıtlı E-posta',
-            'footer' => '© Telif Hakkı 2010 - :current_year, Webkul Software (Hindistan\'da kayıtlı). Tüm hakları saklıdır.',
+            'footer' => '© Telif Hakkı 2010 - :current_year, Contrast Software (Hindistan\'da kayıtlı). Tüm hakları saklıdır.',
             'password' => 'Şifre',
             'submit-btn-title' => 'Şifreyi Sıfırla',
             'title' => 'Şifreyi Sıfırla',
         ],
 
         'login-form' => [
-            'bagisto' => 'Bagisto',
+            'bagisto' => 'Contrast',
             'button-title' => 'Oturum Aç',
             'create-your-account' => 'Hesabınızı oluşturun',
             'email' => 'E-posta',
-            'footer' => '© Telif Hakkı 2010 - :current_year, Webkul Software (Hindistan\'da kayıtlı). Tüm hakları saklıdır.',
+            'footer' => '© Telif Hakkı 2010 - :current_year, Contrast Software (Hindistan\'da kayıtlı). Tüm hakları saklıdır.',
             'forgot-pass' => 'Şifrenizi mi unuttunuz?',
             'form-login-text' => 'Zaten bir hesabınız varsa, e-posta adresinizle giriş yapın.',
             'invalid-credentials' => 'Bilgilerinizi kontrol edin ve tekrar deneyin.',
@@ -49,13 +49,13 @@ return [
 
         'signup-form' => [
             'account-exists' => 'Zaten bir hesabınız var mı?',
-            'bagisto' => 'Bagisto',
+            'bagisto' => 'Contrast',
             'button-title' => 'Kayıt Ol',
             'click-here' => 'Buraya Tıklayın',
             'confirm-pass' => 'Şifreyi Onayla',
             'email' => 'E-posta',
             'first-name' => 'Ad',
-            'footer' => '© Telif Hakkı 2010 - :current_year, Webkul Software (Hindistan\'da kayıtlı). Tüm hakları saklıdır.',
+            'footer' => '© Telif Hakkı 2010 - :current_year, Contrast Software (Hindistan\'da kayıtlı). Tüm hakları saklıdır.',
             'form-signup-text' => 'Mağazamıza yeniyseniz, sizi aramızda görmekten mutluluk duyarız.',
             'last-name' => 'Soyad',
             'page-title' => 'Kayıt Ol',
@@ -562,7 +562,7 @@ return [
                     'bottom' => [
                         'all' => 'Tümü',
                         'back-button' => 'Geri Dön',
-                        'bagisto' => 'Bagisto',
+                        'bagisto' => 'Contrast',
                         'categories' => 'Kategoriler',
                         'compare' => 'Karşılaştır',
                         'dropdown-text' => 'Hesabımı Yönet',
@@ -583,7 +583,7 @@ return [
                 'mobile' => [
                     'account' => 'Hesap',
                     'back-button' => 'Geri Dön',
-                    'bagisto' => 'Bagisto',
+                    'bagisto' => 'Contrast',
                     'compare' => 'Karşılaştır',
                     'currencies' => 'Para Birimleri',
                     'dropdown-text' => 'Hesabımı Yönet',
@@ -609,7 +609,7 @@ return [
                 'customer-service' => 'Müşteri Hizmetleri',
                 'email' => 'E-posta',
                 'footer-content' => 'Alt Bilgi İçeriği',
-                'footer-text' => '© Telif Hakkı 2010 - :current_year, Webkul Software. Tüm hakları saklıdır.',
+                'footer-text' => '© Telif Hakkı 2010 - :current_year, Contrast Software. Tüm hakları saklıdır.',
                 'locale' => 'Dil',
                 'newsletter-text' => 'Bültenimize abone olun, fırsatları kaçırmayın!',
                 'order-return' => 'Sipariş ve İade',
@@ -1042,7 +1042,7 @@ return [
             'suspended-account-message' => 'Hesabınız askıya alınmış.',
 
             'index' => [
-                'bagisto' => 'Bagisto',
+                'bagisto' => 'Contrast',
                 'cart' => 'Sepet',
                 'continue-shopping' => 'Alışverişe Devam Et',
                 'empty-product' => 'Sepetiniz boş.',

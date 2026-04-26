@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'name' => 'Webkul Bagisto Installer',
+    'name' => 'Contrast Contrast Installer',
     'version' => core()->version(),
 ];

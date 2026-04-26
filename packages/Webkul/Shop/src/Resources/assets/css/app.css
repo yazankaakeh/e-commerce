@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: "bagisto-shop";
+    font-family: "contrast-shop";
     src: url("../fonts/bagisto-shop.woff") format("woff");
     font-weight: normal;
     font-style: normal;
@@ -34,7 +34,7 @@ img.lazy {
     [class^="icon-"],
     [class*=" icon-"] {
         /* use !important to prevent issues with browser extensions that change fonts */
-        font-family: "bagisto-shop" !important;
+        font-family: "contrast-shop" !important;
         speak: never;
         font-style: normal;
         font-weight: normal;

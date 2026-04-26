@@ -5,7 +5,7 @@ return [
         'forgot-password' => [
             'already-sent' => 'දැනටමත් මුරපදය යළි පිහිටුවීමේ තැපැල් යවා ඇත.',
             'back' => 'ආපසු සන්නියට ආරයැකිනන්න ?',
-            'bagisto' => 'බගිස්ටෝ',
+            'bagisto' => 'Contrast',
             'email' => 'ඊමේල්',
             'email-not-exist' => 'අපි මෙම විද්‍යුත් ලිපිනය සහිතව පරීක්ෂා කරනවානම් අපි යවනවායි.',
             'footer' => '© වෙබ්කල් මෘදුකාංග 2010 - :current_year, ඉන්දියාවේ ලියාපදිංචි. සියලු අයිතියන්ගේ අනුමානය වෙනස් වේ.',
@@ -19,7 +19,7 @@ return [
 
         'reset-password' => [
             'back-link-title' => 'ආරයැකින්න',
-            'bagisto' => 'බගිස්ටෝ',
+            'bagisto' => 'Contrast',
             'confirm-password' => 'මුරපදය තහවුර',
             'email' => 'ලියාපදිංචි ඊමේල්',
             'footer' => '© වෙබ්කල් මෘදුකාංග 2010 - :current_year, ඉන්දියාවේ ලියාපදිංචි. සියලු අයිතියන්ගේ අනුමානය වෙනස් වේ.',
@@ -29,7 +29,7 @@ return [
         ],
 
         'login-form' => [
-            'bagisto' => 'බගිස්ටෝ',
+            'bagisto' => 'Contrast',
             'button-title' => 'ඇතුල් වන්න',
             'create-your-account' => 'ඔබගේ ගිණුමක් තනා කරන්න',
             'email' => 'ඊමේල්',
@@ -49,7 +49,7 @@ return [
 
         'signup-form' => [
             'account-exists' => 'දැනටමත් ගිණුමක් තිබේද?',
-            'bagisto' => 'බගිස්ටෝ',
+            'bagisto' => 'Contrast',
             'button-title' => 'ලියාපදිංචි කරන්න',
             'click-here' => 'මෙතන ක්ලික් කරන්න',
             'confirm-pass' => 'මුරපදය තහවුර',
@@ -562,7 +562,7 @@ return [
                     'bottom' => [
                         'all' => 'සියල්ල',
                         'back-button' => 'ප්‍රධාන මෙනුවට ආපසු යන්න',
-                        'bagisto' => 'Bagisto',
+                        'bagisto' => 'Contrast',
                         'categories' => 'ප්‍රවර්ග',
                         'compare' => 'සංසන්දනය කරන්න',
                         'dropdown-text' => 'කරත්තය, ඇණවුම් සහ ඉල්ලුම් ලැයිස්තුව කළමනාකරණය කරන්න',
@@ -583,7 +583,7 @@ return [
                 'mobile' => [
                     'account' => 'ගිණුම',
                     'back-button' => 'ප්‍රධාන මෙනුවට ආපසු යන්න',
-                    'bagisto' => 'Bagisto',
+                    'bagisto' => 'Contrast',
                     'compare' => 'සංසන්දනය කරන්න',
                     'currencies' => 'මුදල් ඒකක',
                     'dropdown-text' => 'කරත්තය, ඇණවුම් සහ ඉල්ලුම් ලැයිස්තුව කළමනාකරණය කරන්න',
@@ -1042,7 +1042,7 @@ return [
             'suspended-account-message' => 'ඔබගේ ගිණුම නැවත අක්‍රීය කර ඇත.',
 
             'index' => [
-                'bagisto' => 'බගිස්ටෝ',
+                'bagisto' => 'Contrast',
                 'cart' => 'කර්තෘ',
                 'continue-shopping' => 'කාර්තෘ පෙරවරු',
                 'empty-product' => 'ඔබේ කර්තෘක්කයේ නිෂ්පාදනයක් නැත.',

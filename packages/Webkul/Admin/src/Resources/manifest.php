@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'name' => 'Webkul Bagisto Admin',
+    'name' => 'Contrast Contrast Admin',
     'version' => core()->version(),
 ];

@@ -5532,7 +5532,7 @@ return [
     ],
 
     'footer' => [
-        'copy-right' => 'Працює на платформі <a href="https://bagisto.com/" target="_blank">Bagisto</a>, Спільний проект <a href="https://webkul.com/" target="_blank">Webkul</a>',
+        'copy-right' => 'Працює на платформі <a href="https://contrast.com/" target="_blank">Contrast</a>, Спільний проект <a href="https://contrast.com/" target="_blank">Contrast</a>',
     ],
 
     'emails' => [

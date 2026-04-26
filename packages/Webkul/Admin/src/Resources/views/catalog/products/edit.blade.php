@@ -179,7 +179,7 @@
                         @endif
 
                         @if ($customAttributes->isNotEmpty())
-                            {!! view_render_event("bagisto.admin.catalog.product.edit.form.{$group->code}.before", ['product' => $product]) !!}
+                            {!! view_render_event("contrast.admin.catalog.product.edit.form.{$group->code}.before", ['product' => $product]) !!}
 
                             <div class="box-shadow relative rounded bg-white p-4 dark:bg-gray-900">
                                 <p 
@@ -194,7 +194,7 @@
                                 @endif
 
                                 @foreach ($customAttributes as $attribute)
-                                    {!! view_render_event("bagisto.admin.catalog.product.edit.form.{$group->code}.controls.before", ['product' => $product]) !!}
+                                    {!! view_render_event("contrast.admin.catalog.product.edit.form.{$group->code}.controls.before", ['product' => $product]) !!}
 
                                     <x-admin::form.control-group class="last:!mb-0">
                                         <x-admin::form.control-group.label>
@@ -230,7 +230,7 @@
                                         <x-admin::form.control-group.error :control-name="$attribute->code . (in_array($attribute->type, ['multiselect', 'checkbox']) ? '[]' : '')" />
                                     </x-admin::form.control-group>
 
-                                    {!! view_render_event("bagisto.admin.catalog.product.edit.form.{$group->code}.controls.after", ['product' => $product]) !!}
+                                    {!! view_render_event("contrast.admin.catalog.product.edit.form.{$group->code}.controls.after", ['product' => $product]) !!}
                                 @endforeach
 
                                 @includeWhen($group->code == 'price', 'admin::catalog.products.edit.price.group')
@@ -238,7 +238,7 @@
                                 @includeWhen($group->code === 'inventories', 'admin::catalog.products.edit.inventories')                                
                             </div>
 
-                            {!! view_render_event("bagisto.admin.catalog.product.edit.form.{$group->code}.after", ['product' => $product]) !!}
+                            {!! view_render_event("contrast.admin.catalog.product.edit.form.{$group->code}.after", ['product' => $product]) !!}
                         @endif
                     @endforeach
 

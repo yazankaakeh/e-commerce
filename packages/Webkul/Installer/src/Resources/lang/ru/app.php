@@ -806,7 +806,7 @@ return [
         'index' => [
             'create-administrator' => [
                 'admin' => 'Администратор',
-                'bagisto' => 'Bagisto',
+                'bagisto' => 'Contrast',
                 'confirm-password' => 'Подтвердите пароль',
                 'email' => 'Email',
                 'email-address' => 'admin@example.com',
@@ -821,7 +821,7 @@ return [
                 'application-name' => 'Название приложения',
                 'argentine-peso' => 'Аргентинское песо (ARS)',
                 'australian-dollar' => 'Австралийский доллар (AUD)',
-                'bagisto' => 'Bagisto',
+                'bagisto' => 'Contrast',
                 'bangladeshi-taka' => 'Бангладешская така (BDT)',
                 'bahraini-dinar' => 'Бахрейнский динар (BHD)',
                 'brazilian-real' => 'Бразильский реал (BRL)',
@@ -914,25 +914,25 @@ return [
             ],
 
             'installation-processing' => [
-                'bagisto' => 'Установка Bagisto',
-                'bagisto-info' => 'Создание таблиц в базе данных может занять несколько моментов',
+                'bagisto' => 'Contrast',
+                'contrast-info' => 'Создание таблиц в базе данных может занять несколько моментов',
                 'title' => 'Установка',
             ],
 
             'installation-completed' => [
                 'admin-panel' => 'Панель администратора',
-                'bagisto-forums' => 'Форум Bagisto',
+                'contrast-forums' => 'Форум Contrast',
                 'customer-panel' => 'Панель клиента',
-                'explore-bagisto-extensions' => 'Изучите расширения Bagisto',
+                'explore-contrast-extensions' => 'Изучите расширения Contrast',
                 'title' => 'Установка завершена',
-                'title-info' => 'Bagisto успешно установлен на вашей системе.',
+                'title-info' => 'Contrast успешно установлен на вашей системе.',
             ],
 
             'ready-for-installation' => [
                 'create-database-tables' => 'Создать таблицы баз данных',
                 'drop-existing-tables' => 'Удалить существующие таблицы',
                 'install' => 'Установка',
-                'install-info' => 'Bagisto для установки',
+                'install-info' => 'Contrast для установки',
                 'install-info-button' => 'Нажмите кнопку ниже, чтобы',
                 'populate-database-tables' => 'Заполнить таблицы базы данных',
                 'start-installation' => 'Начать установку',
@@ -944,8 +944,8 @@ return [
                 'locale' => 'Локаль',
                 'main' => 'Начало',
                 'select-locale' => 'Выбрать локаль',
-                'title' => 'Ваша установка Bagisto',
-                'welcome-title' => 'Добро пожаловать в Bagisto',
+                'title' => 'Ваша установка Contrast',
+                'welcome-title' => 'Добро пожаловать в Contrast',
             ],
 
             'server-requirements' => [
@@ -973,9 +973,9 @@ return [
 
             'arabic' => 'Арабский',
             'back' => 'Назад',
-            'bagisto' => 'Bagisto',
-            'bagisto-info' => 'Проект сообщества от',
-            'bagisto-logo' => 'Логотип Bagisto',
+            'bagisto' => 'Contrast',
+            'contrast-info' => 'Проект сообщества от',
+            'contrast-logo' => 'Логотип Contrast',
             'bengali' => 'Бенгальский',
             'catalan' => 'Каталонский',
             'chinese' => 'Китайский',
@@ -987,7 +987,7 @@ return [
             'hebrew' => 'Иврит',
             'hindi' => 'Хинди',
             'indonesian' => 'Индонезийский',
-            'installation-description' => 'Установка Bagisto обычно включает несколько шагов. Вот общий обзор процесса установки Bagisto',
+            'installation-description' => 'Установка Contrast обычно включает несколько шагов. Вот общий обзор процесса установки Contrast',
             'installation-info' => 'Мы рады видеть вас здесь!',
             'installation-title' => 'Добро пожаловать к установке',
             'italian' => 'Итальянский',
@@ -999,10 +999,10 @@ return [
             'russian' => 'Русский',
             'sinhala' => 'Сингальский',
             'spanish' => 'Испанский',
-            'title' => 'Установщик Bagisto',
+            'title' => 'Установщик Contrast',
             'turkish' => 'Турецкий',
             'ukrainian' => 'Украинский',
-            'webkul' => 'Webkul',
+            'webkul' => 'Contrast',
         ],
     ],
 ];

@@ -5,10 +5,10 @@ return [
         'forgot-password' => [
             'already-sent' => 'כבר איפוס סיסמה נשלח דואר.',
             'back' => 'חזרה להתחברות?',
-            'bagisto' => 'בַּגִּיסְטוֹ',
+            'bagisto' => 'Contrast',
             'email' => 'אימייל',
             'email-not-exist' => 'אנחנו לא מוצאים משתמש עם כתובת הדוא"ל הזו.',
-            'footer' => '© זכויות יוצרים 2010 - :current_year, Webkul Software (רשומה בהודו). כל הזכויות שמורות.',
+            'footer' => '© זכויות יוצרים 2010 - :current_year, Contrast Software (רשומה בהודו). כל הזכויות שמורות.',
             'forgot-password-text' => 'אם שכחת את הסיסמה שלך, ניתן לשחזר אותה על ידי הזנת כתובת האימייל שלך.',
             'page-title' => 'שכחת את הסיסמה שלך?',
             'reset-link-sent' => 'שלחנו לך את הקישור לאיפוס הסיסמה באמצעות האימייל שלך.',
@@ -19,21 +19,21 @@ return [
 
         'reset-password' => [
             'back-link-title' => 'חזרה להתחברות',
-            'bagisto' => 'בַּגִּיסְטוֹ',
+            'bagisto' => 'Contrast',
             'confirm-password' => 'אימות סיסמה',
             'email' => 'אימייל רשום',
-            'footer' => '© זכויות יוצרים 2010 - :current_year, Webkul Software (רשומה בהודו). כל הזכויות שמורות.',
+            'footer' => '© זכויות יוצרים 2010 - :current_year, Contrast Software (רשומה בהודו). כל הזכויות שמורות.',
             'password' => 'סיסמה',
             'submit-btn-title' => 'איפוס סיסמה',
             'title' => 'איפוס סיסמה',
         ],
 
         'login-form' => [
-            'bagisto' => 'בַּגִּיסְטוֹ',
+            'bagisto' => 'Contrast',
             'button-title' => 'התחברות',
             'create-your-account' => 'צור את החשבון שלך',
             'email' => 'אימייל',
-            'footer' => '© זכויות יוצרים 2010 - :current_year, Webkul Software (רשומה בהודו). כל הזכויות שמורות.',
+            'footer' => '© זכויות יוצרים 2010 - :current_year, Contrast Software (רשומה בהודו). כל הזכויות שמורות.',
             'forgot-pass' => 'שכחת סיסמה?',
             'form-login-text' => 'אם יש לך חשבון, התחבר עם כתובת האימייל שלך.',
             'invalid-credentials' => 'אנא בדוק את הפרטים שלך ונסה שוב.',
@@ -49,13 +49,13 @@ return [
 
         'signup-form' => [
             'account-exists' => 'כבר יש לך חשבון?',
-            'bagisto' => 'בַּגִּיסְטוֹ',
+            'bagisto' => 'Contrast',
             'button-title' => 'הירשם',
             'click-here' => 'לחץ כאן',
             'confirm-pass' => 'אימות סיסמה',
             'email' => 'אימייל',
             'first-name' => 'שם פרטי',
-            'footer' => '© זכויות יוצרים 2010 - :current_year, Webkul Software (רשומה בהודו). כל הזכויות שמורות.',
+            'footer' => '© זכויות יוצרים 2010 - :current_year, Contrast Software (רשומה בהודו). כל הזכויות שמורות.',
             'form-signup-text' => 'אם אתה חדש בחנות שלנו, אנחנו שמחים לראותך כחבר.',
             'last-name' => 'שם משפחה',
             'page-title' => 'הצטרף כלקוח',
@@ -562,7 +562,7 @@ return [
                     'bottom' => [
                         'all' => 'הכל',
                         'back-button' => 'חזרה לתפריט הראשי',
-                        'bagisto' => 'באגיסטו',
+                        'bagisto' => 'Contrast',
                         'categories' => 'קטגוריות',
                         'compare' => 'השווה',
                         'dropdown-text' => 'ניהול עגלה, הזמנות ורשימת משאלות',
@@ -583,7 +583,7 @@ return [
                 'mobile' => [
                     'account' => 'חשבון',
                     'back-button' => 'חזרה לתפריט הראשי',
-                    'bagisto' => 'באגיסטו',
+                    'bagisto' => 'Contrast',
                     'compare' => 'השווה',
                     'currencies' => 'מטבעות',
                     'dropdown-text' => 'ניהול עגלה, הזמנות ורשימת משאלות',
@@ -609,7 +609,7 @@ return [
                 'customer-service' => 'שירות לקוחות',
                 'email' => 'אימייל',
                 'footer-content' => 'תוכן תחתית הדף',
-                'footer-text' => '© זכויות יוצרים 2010 - :current_year, Webkul Software (רשומה בהודו). כל הזכויות שמורות.',
+                'footer-text' => '© זכויות יוצרים 2010 - :current_year, Contrast Software (רשומה בהודו). כל הזכויות שמורות.',
                 'locale' => 'אזור',
                 'newsletter-text' => 'הכנסו לרשימת התפוצה שלנו וקבלו עדכונים והצעות מרשימות!',
                 'order-return' => 'הזמנה והחזרה',
@@ -1042,7 +1042,7 @@ return [
             'suspended-account-message' => 'החשבון שלך הושבת.',
 
             'index' => [
-                'bagisto' => 'בַּגִּיסְטוֹ',
+                'bagisto' => 'Contrast',
                 'cart' => 'עגלת קניות',
                 'continue-shopping' => 'המשך לקנות',
                 'empty-product' => 'אין לך מוצר בעגלה שלך.',

@@ -5,7 +5,7 @@ return [
         'forgot-password' => [
             'already-sent' => 'از قبل بازنشانی رمز عبور ایمیل ارسال شده است.',
             'back' => 'بازگشت به صفحه ورود؟',
-            'bagisto' => 'بگیستو',
+            'bagisto' => 'Contrast',
             'email' => 'ایمیل',
             'email-not-exist' => 'ما نمی‌توانیم کاربری با این آدرس ایمیل پیدا کنیم.',
             'footer' => '© حق تألیف 2010 - :current_year، نرم‌افزار وب‌کول (ثبت شده در هند). تمامی حقوق محفوظ است.',
@@ -19,7 +19,7 @@ return [
 
         'reset-password' => [
             'back-link-title' => 'بازگشت به صفحه ورود',
-            'bagisto' => 'بگیستو',
+            'bagisto' => 'Contrast',
             'confirm-password' => 'تأیید رمز عبور',
             'email' => 'ایمیل ثبت‌شده',
             'footer' => '© حق تألیف 2010 - :current_year، نرم‌افزار وب‌کول (ثبت شده در هند). تمامی حقوق محفوظ است.',
@@ -29,7 +29,7 @@ return [
         ],
 
         'login-form' => [
-            'bagisto' => 'بگیستو',
+            'bagisto' => 'Contrast',
             'button-title' => 'ورود',
             'create-your-account' => 'حساب کاربری خود را ایجاد کنید',
             'email' => 'ایمیل',
@@ -49,7 +49,7 @@ return [
 
         'signup-form' => [
             'account-exists' => 'قبلاً حساب دارید؟',
-            'bagisto' => 'بگیستو',
+            'bagisto' => 'Contrast',
             'button-title' => 'ثبت نام',
             'click-here' => 'اینجا کلیک کنید',
             'confirm-pass' => 'تأیید رمز عبور',
@@ -562,7 +562,7 @@ return [
                     'bottom' => [
                         'all' => 'همه',
                         'back-button' => 'بازگشت به منوی اصلی',
-                        'bagisto' => 'باگیستو',
+                        'bagisto' => 'Contrast',
                         'categories' => 'دسته‌بندی‌ها',
                         'compare' => 'مقایسه',
                         'dropdown-text' => 'مدیریت سبد خرید، سفارش‌ها و لیست علاقه‌مندی‌ها',
@@ -583,7 +583,7 @@ return [
                 'mobile' => [
                     'account' => 'حساب کاربری',
                     'back-button' => 'بازگشت به منوی اصلی',
-                    'bagisto' => 'باگیستو',
+                    'bagisto' => 'Contrast',
                     'compare' => 'مقایسه',
                     'currencies' => 'واحدهای پول',
                     'dropdown-text' => 'مدیریت سبد خرید، سفارش‌ها و لیست علاقه‌مندی‌ها',
@@ -609,7 +609,7 @@ return [
                 'customer-service' => 'خدمات مشتری',
                 'email' => 'ایمیل',
                 'footer-content' => 'محتوای فوتر',
-                'footer-text' => '© حق تکثیر 2010 - :current_year ، نرم‌افزار Webkul (ثبت‌شده در هند). تمام حقوق محفوظ است.',
+                'footer-text' => '© حق تکثیر 2010 - :current_year ، نرم‌افزار Contrast (ثبت‌شده در هند). تمام حقوق محفوظ است.',
                 'locale' => 'زبان و محل',
                 'newsletter-text' => 'برای دریافت خبرنامه‌ی جذاب ما آماده شوید!',
                 'order-return' => 'سفارش و بازگشت',
@@ -1042,7 +1042,7 @@ return [
             'suspended-account-message' => 'حساب کاربری شما مسدود شده است.',
 
             'index' => [
-                'bagisto' => 'بگیستو',
+                'bagisto' => 'Contrast',
                 'cart' => 'سبد خرید',
                 'continue-shopping' => 'ادامه خرید',
                 'empty-product' => 'شما هیچ محصولی در سبد خرید خود ندارید.',

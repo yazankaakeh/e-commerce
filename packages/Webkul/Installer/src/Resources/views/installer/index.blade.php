@@ -294,7 +294,7 @@
                         <p class="mb-6 w-full place-self-end text-left">
                             <a
                                 class="bg-white text-blue-600 underline"
-                                href="https://bagisto.com/en/"
+                                href="https://contrast.com/en/"
                             >
                                 @lang('installer::app.installer.index.bagisto')
                             </a>
@@ -303,9 +303,9 @@
 
                             <a
                                 class="bg-white text-blue-600 underline"
-                                href="https://webkul.com/"
+                                href="https://contrast.com/"
                             >
-                                @lang('installer::app.installer.index.webkul')
+                                @lang('installer::app.installer.index.contrast')
                             </a>
                         </p>
                     </div>
@@ -778,7 +778,7 @@
                                     <x-installer::form.control-group.control
                                         type="text"
                                         name="app_name"
-                                        ::value="envData.app_name ?? 'Bagisto'"
+                                        ::value="envData.app_name ?? 'Contrast'"
                                         rules="required"
                                         :label="trans('installer::app.installer.index.environment-configuration.application-name')"
                                         :placeholder="trans('installer::app.installer.index.environment-configuration.bagisto')"
@@ -1217,14 +1217,14 @@
 
                     <div class="flex items-center justify-between px-4 py-2.5">
                         <a
-                            href="https://forums.bagisto.com"
+                            href="https://forums.contrast.com"
                             class="cursor-pointer text-xs font-semibold text-blue-600"
                         >
                             @lang('installer::app.installer.index.installation-completed.bagisto-forums')
                         </a>
 
                         <a
-                            href="https://bagisto.com/en/extensions"
+                            href="https://contrast.com/en/extensions"
                             class="cursor-pointer rounded-md border border-blue-700 bg-white px-3 py-1.5 font-semibold text-blue-600 hover:opacity-90"
                         >
                             @lang('installer::app.installer.index.installation-completed.explore-bagisto-extensions')
@@ -1303,7 +1303,7 @@
 
                                         this.envData = { ...this.envData, ...params };
                                     } else {
-                                        setErrors({ 'db_connection': ["Bagisto currently supports MySQL only."] });
+                                        setErrors({ 'db_connection': ["Contrast currently supports MySQL only."] });
                                     }
                                 },
 

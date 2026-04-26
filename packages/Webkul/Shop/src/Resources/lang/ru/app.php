@@ -5,10 +5,10 @@ return [
         'forgot-password' => [
             'already-sent' => 'Письмо для сброса пароля уже отправлено.',
             'back' => 'Вернуться к входу?',
-            'bagisto' => 'Багисто',
+            'bagisto' => 'Contrast',
             'email' => 'Электронная почта',
             'email-not-exist' => 'Мы не можем найти пользователя с этим адресом электронной почты.',
-            'footer' => '© Авторское право 2010 - :current_year, Webkul Software (зарегистрировано в Индии). Все права защищены.',
+            'footer' => '© Авторское право 2010 - :current_year, Contrast Software (зарегистрировано в Индии). Все права защищены.',
             'forgot-password-text' => 'Если вы забыли свой пароль, восстановите его, введя свой адрес электронной почты.',
             'page-title' => 'Забыли пароль?',
             'reset-link-sent' => 'Мы отправили вам ссылку для сброса пароля на вашу электронную почту.',
@@ -19,21 +19,21 @@ return [
 
         'reset-password' => [
             'back-link-title' => 'Вернуться к входу',
-            'bagisto' => 'Багисто',
+            'bagisto' => 'Contrast',
             'confirm-password' => 'Подтвердите пароль',
             'email' => 'Зарегистрированная почта',
-            'footer' => '© Авторское право 2010 - :current_year, Webkul Software (зарегистрировано в Индии). Все права защищены.',
+            'footer' => '© Авторское право 2010 - :current_year, Contrast Software (зарегистрировано в Индии). Все права защищены.',
             'password' => 'Пароль',
             'submit-btn-title' => 'Сбросить пароль',
             'title' => 'Сброс пароля',
         ],
 
         'login-form' => [
-            'bagisto' => 'Багисто',
+            'bagisto' => 'Contrast',
             'button-title' => 'Войти',
             'create-your-account' => 'Создайте свой аккаунт',
             'email' => 'Электронная почта',
-            'footer' => '© Авторское право 2010 - :current_year, Webkul Software (зарегистрировано в Индии). Все права защищены.',
+            'footer' => '© Авторское право 2010 - :current_year, Contrast Software (зарегистрировано в Индии). Все права защищены.',
             'forgot-pass' => 'Забыли пароль?',
             'form-login-text' => 'Если у вас есть аккаунт, войдите, используя свой адрес электронной почты.',
             'invalid-credentials' => 'Пожалуйста, проверьте свои учетные данные и попробуйте снова.',
@@ -49,13 +49,13 @@ return [
 
         'signup-form' => [
             'account-exists' => 'Уже есть аккаунт?',
-            'bagisto' => 'Багисто',
+            'bagisto' => 'Contrast',
             'button-title' => 'Зарегистрироваться',
             'click-here' => 'Нажмите здесь',
             'confirm-pass' => 'Подтвердите пароль',
             'email' => 'Электронная почта',
             'first-name' => 'Имя',
-            'footer' => '© Авторское право 2010 - :current_year, Webkul Software (зарегистрировано в Индии). Все права защищены.',
+            'footer' => '© Авторское право 2010 - :current_year, Contrast Software (зарегистрировано в Индии). Все права защищены.',
             'form-signup-text' => 'Если вы новичок в нашем магазине, мы рады видеть вас как участника.',
             'last-name' => 'Фамилия',
             'page-title' => 'Стать пользователем',
@@ -562,7 +562,7 @@ return [
                     'bottom' => [
                         'all' => 'Все',
                         'back-button' => 'Назад к главному меню',
-                        'bagisto' => 'Багисто',
+                        'bagisto' => 'Contrast',
                         'categories' => 'Категории',
                         'compare' => 'Сравнить',
                         'dropdown-text' => 'Управление корзиной, заказами и избранным',
@@ -583,7 +583,7 @@ return [
                 'mobile' => [
                     'account' => 'Аккаунт',
                     'back-button' => 'Назад к главному меню',
-                    'bagisto' => 'Багисто',
+                    'bagisto' => 'Contrast',
                     'compare' => 'Сравнить',
                     'currencies' => 'Валюты',
                     'dropdown-text' => 'Управление корзиной, заказами и избранным',
@@ -609,7 +609,7 @@ return [
                 'customer-service' => 'Служба поддержки',
                 'email' => 'Электронная почта',
                 'footer-content' => 'Содержимое футера',
-                'footer-text' => '© Авторское право 2010 - :current_year, Webkul Software (зарегистрировано в Индии). Все права защищены.',
+                'footer-text' => '© Авторское право 2010 - :current_year, Contrast Software (зарегистрировано в Индии). Все права защищены.',
                 'locale' => 'Язык',
                 'newsletter-text' => 'Подготовьтесь к нашей интересной рассылке!',
                 'order-return' => 'Заказ и возврат',
@@ -1042,7 +1042,7 @@ return [
             'suspended-account-message' => 'Ваш аккаунт был приостановлен.',
 
             'index' => [
-                'bagisto' => 'Багисто',
+                'bagisto' => 'Contrast',
                 'cart' => 'Корзина',
                 'continue-shopping' => 'Продолжить покупки',
                 'empty-product' => 'В вашей корзине нет товаров.',

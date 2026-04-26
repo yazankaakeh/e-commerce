@@ -806,7 +806,7 @@ return [
         'index' => [
             'create-administrator' => [
                 'admin' => '管理员',
-                'bagisto' => 'Bagisto',
+                'bagisto' => 'Contrast',
                 'confirm-password' => '确认密码',
                 'email' => '电子邮件',
                 'email-address' => 'admin@example.com',
@@ -821,7 +821,7 @@ return [
                 'application-name' => '应用程序名称',
                 'argentine-peso' => '阿根廷比索 (ARS)',
                 'australian-dollar' => '澳大利亚元 (AUD)',
-                'bagisto' => 'Bagisto',
+                'bagisto' => 'Contrast',
                 'bangladeshi-taka' => '孟加拉塔卡 (BDT)',
                 'bahraini-dinar' => '巴林第纳尔 (BHD)',
                 'brazilian-real' => '巴西雷亚尔 (BRL)',
@@ -914,25 +914,25 @@ return [
             ],
 
             'installation-processing' => [
-                'bagisto' => 'Bagisto 安装',
-                'bagisto-info' => '正在创建数据库表，这可能需要一些时间',
+                'bagisto' => 'Contrast',
+                'contrast-info' => '正在创建数据库表，这可能需要一些时间',
                 'title' => '安装',
             ],
 
             'installation-completed' => [
                 'admin-panel' => '管理员面板',
-                'bagisto-forums' => 'Bagisto 论坛',
+                'contrast-forums' => 'Contrast 论坛',
                 'customer-panel' => '客户面板',
-                'explore-bagisto-extensions' => '探索 Bagisto 扩展',
+                'explore-contrast-extensions' => '探索 Contrast 扩展',
                 'title' => '安装已完成',
-                'title-info' => 'Bagisto 已成功安装在您的系统上。',
+                'title-info' => 'Contrast 已成功安装在您的系统上。',
             ],
 
             'ready-for-installation' => [
                 'create-database-tables' => '创建数据库表',
                 'drop-existing-tables' => '删除任何现有表',
                 'install' => '安装',
-                'install-info' => 'Bagisto 安装信息',
+                'install-info' => 'Contrast 安装信息',
                 'install-info-button' => '点击下面的按钮',
                 'populate-database-tables' => '填充数据库表',
                 'start-installation' => '开始安装',
@@ -944,8 +944,8 @@ return [
                 'locale' => '区域设置',
                 'main' => '开始',
                 'select-locale' => '选择区域设置',
-                'title' => '您的 Bagisto 安装',
-                'welcome-title' => '欢迎来到 Bagisto',
+                'title' => '您的 Contrast 安装',
+                'welcome-title' => '欢迎来到 Contrast',
             ],
 
             'server-requirements' => [
@@ -973,9 +973,9 @@ return [
 
             'arabic' => '阿拉伯语',
             'back' => '返回',
-            'bagisto' => 'Bagisto',
-            'bagisto-info' => '由 Webkul 社区共同开发的项目',
-            'bagisto-logo' => 'Bagisto Logo',
+            'bagisto' => 'Contrast',
+            'contrast-info' => '由 Contrast 社区共同开发的项目',
+            'contrast-logo' => 'Contrast Logo',
             'bengali' => '孟加拉语',
             'catalan' => '加泰罗尼亚语',
             'chinese' => '中文',
@@ -987,9 +987,9 @@ return [
             'hebrew' => '希伯来语',
             'hindi' => '印地语',
             'indonesian' => '印尼语',
-            'installation-description' => 'Bagisto 的安装通常涉及几个步骤。以下是 Bagisto 安装过程的一般概述',
+            'installation-description' => 'Contrast 的安装通常涉及几个步骤。以下是 Contrast 安装过程的一般概述',
             'installation-info' => '我们很高兴在这里见到你！',
-            'installation-title' => '欢迎安装 Bagisto',
+            'installation-title' => '欢迎安装 Contrast',
             'italian' => '意大利语',
             'japanese' => '日语',
             'persian' => '波斯语',
@@ -999,10 +999,10 @@ return [
             'russian' => '俄语',
             'sinhala' => '僧伽罗语',
             'spanish' => '西班牙语',
-            'title' => 'Bagisto 安装程序',
+            'title' => 'Contrast 安装程序',
             'turkish' => '土耳其语',
             'ukrainian' => '乌克兰语',
-            'webkul' => 'Webkul',
+            'webkul' => 'Contrast',
         ],
     ],
 ];

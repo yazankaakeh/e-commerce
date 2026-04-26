@@ -13,7 +13,7 @@
 	}
 
 	@font-face {
-		font-family: 'bagisto-installer';
+		font-family: 'contrast-installer';
 		src: url('../fonts/bagisto-installer.woff') format('woff');
 		font-weight: normal;
 		font-style: normal;
@@ -23,7 +23,7 @@
 	[class^="icon-"],
 	[class*=" icon-"] {
 		/* use !important to prevent issues with browser extensions that change fonts */
-		font-family: 'bagisto-installer' !important;
+		font-family: 'contrast-installer' !important;
 		speak: never;
 		font-style: normal;
 		font-weight: normal;

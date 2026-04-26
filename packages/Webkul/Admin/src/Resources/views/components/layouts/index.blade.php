@@ -35,7 +35,7 @@
     >
     <meta 
         name="generator" 
-        content="Bagisto"
+        content="Contrast"
     >
 
     @stack('meta')
@@ -86,7 +86,7 @@
 <body class="h-full dark:bg-gray-950">
     {!! view_render_event('bagisto.admin.layout.body.before') !!}
 
-    <!-- Built With Bagisto -->
+    <!-- Built With Contrast -->
     <div
         id="app"
         class="h-full"
@@ -131,8 +131,8 @@
                 <div class="mt-auto">
                     <div class="border-t bg-white py-2 text-center text-xs sm:text-sm dark:border-gray-800 dark:bg-gray-900 dark:text-white">
                         @lang('admin::app.components.layouts.powered-by.description', [
-                            'bagisto' => '<a class="text-blue-600 hover:underline dark:text-darkBlue" href="https://bagisto.com/en/">Bagisto</a>',
-                            'webkul' => '<a class="text-blue-600 hover:underline dark:text-darkBlue" href="https://webkul.com/">Webkul</a>',
+                            'bagisto' => '<a class="text-blue-600 hover:underline dark:text-darkBlue" href="https://contrast.com/en/">Contrast</a>',
+                            'webkul' => '<a class="text-blue-600 hover:underline dark:text-darkBlue" href="https://contrast.com/">Contrast</a>',
                         ])
                     </div>
                 </div>

@@ -6,7 +6,7 @@ return [
             'email' => 'メールアドレス',
             'forget-password-link' => 'パスワードを忘れましたか？',
             'password' => 'パスワード',
-            'powered-by-description' => ':webkul によるオープンソースプロジェクト :bagisto によって提供されています。',
+            'powered-by-description' => ':bagisto によるオープンソースプロジェクト :webkul によって提供されています。',
             'submit-btn' => 'サインイン',
             'title' => 'サインイン',
         ],
@@ -16,7 +16,7 @@ return [
                 'email' => '登録済みメールアドレス',
                 'email-not-exist' => 'メールアドレスが存在しません',
                 'page-title' => 'パスワードを忘れる',
-                'powered-by-description' => ':webkul によるオープンソースプロジェクト :bagisto によって提供されています。',
+                'powered-by-description' => ':bagisto によるオープンソースプロジェクト :webkul によって提供されています。',
                 'reset-link-sent' => 'パスワードリセットリンク送信済み',
                 'sign-in-link' => 'サインイン画面に戻る？',
                 'submit-btn' => 'リセット',
@@ -29,7 +29,7 @@ return [
             'confirm-password' => 'パスワードを確認',
             'email' => '登録済みメールアドレス',
             'password' => 'パスワード',
-            'powered-by-description' => ':webkul によるオープンソースプロジェクト :bagisto によって提供されています。',
+            'powered-by-description' => ':bagisto によるオープンソースプロジェクト :webkul によって提供されています。',
             'submit-btn' => 'パスワードをリセット',
             'title' => 'パスワードをリセット',
         ],
@@ -4681,7 +4681,7 @@ return [
                 'title' => 'メール',
 
                 'smtp' => [
-                    'driver-mismatch-info' => 'メールドライバーは "bagisto-dynamic-smtp" ではなく ":driver" に設定されていますここで行った変更は有効になりません。.envファイルでMAIL_MAILER=bagisto-dynamic-smtpを更新して、これらの設定をアクティブにしてください。',
+                    'driver-mismatch-info' => 'メールドライバーは "bagisto-dynamic-smtp" ではなく ":driver" に設定されていますここで行った変更は有効になりません。.envファイルでMAIL_MAILER=contrast-dynamic-smtpを更新して、これらの設定をアクティブにしてください。',
                     'driver-mismatch-title' => 'これらの設定は現在無効です。',
                     'encryption' => '暗号化',
                     'host' => 'ホスト',
@@ -5205,7 +5205,7 @@ return [
             ],
 
             'powered-by' => [
-                'description' => ':webkul によるオープンソースプロジェクト :bagisto によって提供されています。',
+                'description' => ':bagisto によるオープンソースプロジェクト :webkul によって提供されています。',
             ],
         ],
 
@@ -5532,7 +5532,7 @@ return [
     ],
 
     'footer' => [
-        'copy-right' => '搭載 <a href="https://bagisto.com/" target="_blank">Bagisto</a>, Webkulによるコミュニティプロジェクト<a href="https://webkul.com/" target="_blank">Webkul</a>',
+        'copy-right' => '搭載 <a href="https://contrast.com/" target="_blank">Contrast</a>, Contrastによるコミュニティプロジェクト<a href="https://contrast.com/" target="_blank">Contrast</a>',
     ],
 
     'emails' => [

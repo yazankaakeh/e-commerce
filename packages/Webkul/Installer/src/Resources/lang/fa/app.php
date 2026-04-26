@@ -806,7 +806,7 @@ return [
         'index' => [
             'create-administrator' => [
                 'admin' => 'مدیر',
-                'bagisto' => 'Bagisto',
+                'bagisto' => 'Contrast',
                 'confirm-password' => 'تأیید رمز عبور',
                 'email' => 'ایمیل',
                 'email-address' => 'admin@example.com',
@@ -821,7 +821,7 @@ return [
                 'application-name' => 'نام برنامه',
                 'argentine-peso' => 'پزوی آرژانتین (ARS)',
                 'australian-dollar' => 'دلار استرالیا (AUD)',
-                'bagisto' => 'Bagisto',
+                'bagisto' => 'Contrast',
                 'bangladeshi-taka' => 'تاکای بنگلادش (BDT)',
                 'bahraini-dinar' => 'دینار بحرین (BHD)',
                 'brazilian-real' => 'رئال برزیل (BRL)',
@@ -914,25 +914,25 @@ return [
             ],
 
             'installation-processing' => [
-                'bagisto' => 'نصب Bagisto',
-                'bagisto-info' => 'ایجاد جداول پایگاه داده، این ممکن است چند لحظه طول بکشد',
+                'bagisto' => 'Contrast',
+                'contrast-info' => 'ایجاد جداول پایگاه داده، این ممکن است چند لحظه طول بکشد',
                 'title' => 'نصب',
             ],
 
             'installation-completed' => [
                 'admin-panel' => 'پنل مدیریت',
-                'bagisto-forums' => 'انجمن Bagisto',
+                'contrast-forums' => 'انجمن Contrast',
                 'customer-panel' => 'پنل مشتریان',
-                'explore-bagisto-extensions' => 'کاوش در افزونه‌های Bagisto',
+                'explore-contrast-extensions' => 'کاوش در افزونه‌های Contrast',
                 'title' => 'نصب با موفقیت انجام شد',
-                'title-info' => 'Bagisto با موفقیت بر روی سیستم شما نصب شده است.',
+                'title-info' => 'Contrast با موفقیت بر روی سیستم شما نصب شده است.',
             ],
 
             'ready-for-installation' => [
                 'create-database-tables' => 'ایجاد جداول پایگاه د',
                 'drop-existing-tables' => 'حذف جداول موجود',
                 'install' => 'نصب',
-                'install-info' => 'Bagisto برای نصب',
+                'install-info' => 'Contrast برای نصب',
                 'install-info-button' => 'برای شروع کلیک کنید',
                 'populate-database-tables' => 'پر کردن جدول‌های پایگاه‌داده',
                 'start-installation' => 'شروع نصب',
@@ -944,8 +944,8 @@ return [
                 'locale' => 'محلی',
                 'main' => 'شروع',
                 'select-locale' => 'انتخاب محلی',
-                'title' => 'نصب Bagisto شما',
-                'welcome-title' => 'خوش آمدید به Bagisto',
+                'title' => 'نصب Contrast شما',
+                'welcome-title' => 'خوش آمدید به Contrast',
             ],
 
             'server-requirements' => [
@@ -973,9 +973,9 @@ return [
 
             'arabic' => 'عربی',
             'back' => 'بازگشت',
-            'bagisto' => 'Bagisto',
-            'bagisto-info' => 'یک پروژه جامعه‌ای توسط',
-            'bagisto-logo' => 'لوگوی Bagisto',
+            'bagisto' => 'Contrast',
+            'contrast-info' => 'یک پروژه جامعه‌ای توسط',
+            'contrast-logo' => 'لوگوی Contrast',
             'bengali' => 'بنگالی',
             'catalan' => 'کاتالان',
             'chinese' => 'چینی',
@@ -987,9 +987,9 @@ return [
             'hebrew' => 'عبری',
             'hindi' => 'هندی',
             'indonesian' => 'اندونزیایی',
-            'installation-description' => 'نصب Bagisto معمولاً شامل چندین مرحله است. در اینجا یک نمای کلی از فرآیند نصب برای Bagisto آورده شده است',
+            'installation-description' => 'نصب Contrast معمولاً شامل چندین مرحله است. در اینجا یک نمای کلی از فرآیند نصب برای Contrast آورده شده است',
             'installation-info' => 'خوشحالیم که شما را اینجا می‌بینیم!',
-            'installation-title' => 'به نصب Bagisto خوش آمدید',
+            'installation-title' => 'به نصب Contrast خوش آمدید',
             'italian' => 'ایتالیایی',
             'japanese' => 'ژاپنی',
             'persian' => 'فارسی',
@@ -999,10 +999,10 @@ return [
             'russian' => 'روسی',
             'sinhala' => 'سینهالا',
             'spanish' => 'اسپانیایی',
-            'title' => 'نصب‌کننده Bagisto',
+            'title' => 'نصب‌کننده Contrast',
             'turkish' => 'ترکی',
             'ukrainian' => 'اوکراینی',
-            'webkul' => 'Webkul',
+            'webkul' => 'Contrast',
         ],
     ],
 ];

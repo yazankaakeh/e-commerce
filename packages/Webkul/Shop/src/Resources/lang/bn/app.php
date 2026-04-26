@@ -5,7 +5,7 @@ return [
         'forgot-password' => [
             'already-sent' => 'ইতিমধ্যেই পাসওয়ার্ড রিসেট মেল পাঠানো হয়েছে।',
             'back' => 'সাইন ইনে ফিরে যেতে?',
-            'bagisto' => 'বাগিস্তো',
+            'bagisto' => 'Contrast',
             'email' => 'ইমেইল',
             'email-not-exist' => 'আমরা ঐ ইমেইল ঠিকানার সাথে কোনও ব্যবহারকারী খুঁজে পেতে পারি নি।',
             'footer' => '© কপিরাইট 2010 - :current_year, ওয়েবকুল সফটওয়্যার (ভারতে নিবন্ধিত)। সব অধিকার সংরক্ষিত।',
@@ -19,7 +19,7 @@ return [
 
         'reset-password' => [
             'back-link-title' => 'সাইন ইনে ফিরে যেতে',
-            'bagisto' => 'বাগিস্তো',
+            'bagisto' => 'Contrast',
             'confirm-password' => 'পাসওয়ার্ড নিশ্চিত করুন',
             'email' => 'রেজিস্টারড ইমেইল',
             'footer' => '© কপিরাইট 2010 - :current_year, ওয়েবকুল সফটওয়্যার (ভারতে নিবন্ধিত)। সব অধিকার সংরক্ষিত।',
@@ -29,7 +29,7 @@ return [
         ],
 
         'login-form' => [
-            'bagisto' => 'বাগিস্তো',
+            'bagisto' => 'Contrast',
             'button-title' => 'সাইন ইন করুন',
             'create-your-account' => 'আপনার একাউন্ট তৈরি করুন',
             'email' => 'ইমেইল',
@@ -49,7 +49,7 @@ return [
 
         'signup-form' => [
             'account-exists' => 'ইতিমধ্যে একটি অ্যাকাউন্ট আছে?',
-            'bagisto' => 'বাগিস্তো',
+            'bagisto' => 'Contrast',
             'button-title' => 'রেজিস্টার করুন',
             'click-here' => 'এখানে ক্লিক করুন',
             'confirm-pass' => 'পাসওয়ার্ড নিশ্চিত করুন',
@@ -562,7 +562,7 @@ return [
                     'bottom' => [
                         'all' => 'সব',
                         'back-button' => 'প্রধান মেনুতে ফিরে যান',
-                        'bagisto' => 'বাগিস্টো',
+                        'bagisto' => 'Contrast',
                         'categories' => 'বিভাগ',
                         'compare' => 'তুলনা করুন',
                         'dropdown-text' => 'কার্ট, অর্ডার ও উইশলিস্ট পরিচালনা করুন',
@@ -583,7 +583,7 @@ return [
                 'mobile' => [
                     'account' => 'অ্যাকাউন্ট',
                     'back-button' => 'প্রধান মেনুতে ফিরে যান',
-                    'bagisto' => 'বাগিস্টো',
+                    'bagisto' => 'Contrast',
                     'compare' => 'তুলনা করুন',
                     'currencies' => 'মুদ্রা',
                     'dropdown-text' => 'কার্ট, অর্ডার ও উইশলিস্ট পরিচালনা করুন',
@@ -609,7 +609,7 @@ return [
                 'customer-service' => 'গ্রাহক সেবা',
                 'email' => 'ইমেইল',
                 'footer-content' => 'ফুটারের সামগ্রী',
-                'footer-text' => '© কপিরাইট 2010 - :current_year, Webkul Software (ভারতে নিবন্ধিত)। সমস্ত অধিকার সংরক্ষিত।',
+                'footer-text' => '© কপিরাইট 2010 - :current_year, Contrast Software (ভারতে নিবন্ধিত)। সমস্ত অধিকার সংরক্ষিত।',
                 'locale' => 'লোকেল',
                 'newsletter-text' => 'আমাদের মজাদার নিউজলেটারের জন্য প্রস্তুত থাকুন!',
                 'order-return' => 'অর্ডার এবং রিটার্ন',
@@ -1042,7 +1042,7 @@ return [
             'suspended-account-message' => 'আপনার অ্যাকাউন্ট স্থগিত করা হয়েছে',
 
             'index' => [
-                'bagisto' => 'বাগিস্তো',
+                'bagisto' => 'Contrast',
                 'cart' => 'কার্ট',
                 'continue-shopping' => 'কেনাকাটা চালিয়ে যান',
                 'empty-product' => 'আপনার কার্টে কোনও পণ্য নেই।',

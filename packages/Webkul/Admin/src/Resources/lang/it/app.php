@@ -5532,7 +5532,7 @@ return [
     ],
 
     'footer' => [
-        'copy-right' => 'Realizzato da <a href="https://bagisto.com/" target="_blank">Bagisto</a>, un progetto della community di <a href="https://webkul.com/" target="_blank">Webkul</a>',
+        'copy-right' => 'Realizzato da <a href="https://contrast.com/" target="_blank">Contrast</a>, un progetto della community di <a href="https://contrast.com/" target="_blank">Contrast</a>',
     ],
 
     'emails' => [

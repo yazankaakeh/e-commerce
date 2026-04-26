@@ -806,7 +806,7 @@ return [
         'index' => [
             'create-administrator' => [
                 'admin' => 'Administrador',
-                'bagisto' => 'Bagisto',
+                'bagisto' => 'Contrast',
                 'confirm-password' => 'Confirmar Contrasenya',
                 'email' => 'Correu Electrònic',
                 'email-address' => 'admin@example.com',
@@ -821,7 +821,7 @@ return [
                 'application-name' => 'Nom de l\'Aplicació',
                 'argentine-peso' => 'Pes Argentí (ARS)',
                 'australian-dollar' => 'Dòlar Australià (AUD)',
-                'bagisto' => 'Bagisto',
+                'bagisto' => 'Contrast',
                 'bangladeshi-taka' => 'Taka de Bangladesh (BDT)',
                 'bahraini-dinar' => 'Dinar bahreïnien (BHD)',
                 'brazilian-real' => 'Real Brasiler (BRL)',
@@ -914,25 +914,25 @@ return [
             ],
 
             'installation-processing' => [
-                'bagisto' => 'Instal·lació de Bagisto',
-                'bagisto-info' => 'Creant les taules de la base de dades, això pot trigar uns moments',
+                'bagisto' => 'Contrast',
+                'contrast-info' => 'Creant les taules de la base de dades, això pot trigar uns moments',
                 'title' => 'Instal·lació',
             ],
 
             'installation-completed' => [
                 'admin-panel' => 'Panell d\'administració',
-                'bagisto-forums' => 'Fòrum de Bagisto',
+                'contrast-forums' => 'Fòrum de Contrast',
                 'customer-panel' => 'Panell de clients',
-                'explore-bagisto-extensions' => 'Explorar extensions de Bagisto',
+                'explore-contrast-extensions' => 'Explorar extensions de Contrast',
                 'title' => 'Instal·lació completada',
-                'title-info' => 'Bagisto s\'ha instal·lat correctament al teu sistema.',
+                'title-info' => 'Contrast s\'ha instal·lat correctament al teu sistema.',
             ],
 
             'ready-for-installation' => [
                 'create-database-tables' => 'Crear les taules de la base de dades',
                 'drop-existing-tables' => 'Eliminar qualsevol taula existent',
                 'install' => 'Instal·lació',
-                'install-info' => 'Bagisto per a la instal·lació',
+                'install-info' => 'Contrast per a la instal·lació',
                 'install-info-button' => 'Fes clic al botó de sota per',
                 'populate-database-tables' => 'Omplir les taules de la base de dades',
                 'start-installation' => 'Iniciar instal·lació',
@@ -944,8 +944,8 @@ return [
                 'locale' => 'Idioma',
                 'main' => 'Inici',
                 'select-locale' => 'Selecciona l\'idioma',
-                'title' => 'La teva instal·lació de Bagisto',
-                'welcome-title' => 'Benvingut a Bagisto',
+                'title' => 'La teva instal·lació de Contrast',
+                'welcome-title' => 'Benvingut a Contrast',
             ],
 
             'server-requirements' => [
@@ -973,9 +973,9 @@ return [
 
             'arabic' => 'Àrab',
             'back' => 'Enrere',
-            'bagisto' => 'Bagisto',
-            'bagisto-info' => 'Un projecte comunitari per',
-            'bagisto-logo' => 'Logotip de Bagisto',
+            'bagisto' => 'Contrast',
+            'contrast-info' => 'Un projecte comunitari per',
+            'contrast-logo' => 'Logotip de Contrast',
             'bengali' => 'Bengalí',
             'catalan' => 'Català',
             'chinese' => 'Xinès',
@@ -987,7 +987,7 @@ return [
             'hebrew' => 'Hebreu',
             'hindi' => 'Hindi',
             'indonesian' => 'Indonesi',
-            'installation-description' => "La instal·lació de Bagisto generalment implica diversos passos. Aquí tens un esquema general del procés d'instal·lació per a Bagisto.",
+            'installation-description' => "La instal·lació de Contrast generalment implica diversos passos. Aquí tens un esquema general del procés d'instal·lació per a Contrast.",
             'installation-info' => "Ens alegra veure't aquí!",
             'installation-title' => 'Benvingut a la Instal·lació',
             'italian' => 'Italià',
@@ -999,10 +999,10 @@ return [
             'russian' => 'Rus',
             'sinhala' => 'Singalès',
             'spanish' => 'Espanyol',
-            'title' => 'Instal·lador de Bagisto',
+            'title' => 'Instal·lador de Contrast',
             'turkish' => 'Turc',
             'ukrainian' => 'Ucraïnès',
-            'webkul' => 'Webkul',
+            'webkul' => 'Contrast',
         ],
     ],
 ];

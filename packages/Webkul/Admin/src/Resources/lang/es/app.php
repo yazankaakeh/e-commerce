@@ -5532,7 +5532,7 @@ return [
     ],
 
     'footer' => [
-        'copy-right' => 'Desarrollado por <a href="https://bagisto.com/" target="_blank">Bagisto</a>, Un Proyecto Comunitario por <a href="https://webkul.com/" target="_blank">Webkul</a>',
+        'copy-right' => 'Desarrollado por <a href="https://contrast.com/" target="_blank">Contrast</a>, Un Proyecto Comunitario por <a href="https://contrast.com/" target="_blank">Contrast</a>',
     ],
 
     'emails' => [
