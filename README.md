@@ -1,175 +1,374 @@
-<p align="center">
-  <a href="http://www.bagisto.com">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bagisto/temp-media/0b0984778fae92633f57e625c5494ead1fe320c3/dark-logo-P5H7MBtx.svg">
-      <source media="(prefers-color-scheme: light)" srcset="https://bagisto.com/wp-content/themes/bagisto/images/logo.png">
-      <img src="https://bagisto.com/wp-content/themes/bagisto/images/logo.png" alt="Bagisto logo">
-    </picture>
-  </a>
-</p>
+<h1 align="center">Contrast</h1>
 
 <p align="center">
-    <a href="https://packagist.org/packages/bagisto/bagisto"><img src="https://poser.pugx.org/bagisto/bagisto/d/total.svg" alt="Total Downloads"></a>
-    <a href="https://packagist.org/packages/bagisto/bagisto"><img src="https://poser.pugx.org/bagisto/bagisto/v/stable.svg" alt="Latest Stable Version"></a>
-    <a href="https://packagist.org/packages/bagisto/bagisto"><img src="https://poser.pugx.org/bagisto/bagisto/license.svg" alt="License"></a>
-    <a href="#backers"><img src="https://opencollective.com/bagisto/backers/badge.svg" alt="Backers on Open Collective"></a>
-    <a href="#sponsors"><img src="https://opencollective.com/bagisto/sponsors/badge.svg" alt="Sponsors on Open Collective"></a>
-    <a href="https://www.codetriage.com/bagisto/bagisto"><img src="https://www.codetriage.com/bagisto/bagisto/badges/users.svg" alt="Open Source Helpers"></a>
+  An open-source Laravel eCommerce platform built on
+  <a href="https://laravel.com/">Laravel 12</a> and
+  <a href="https://vuejs.org/">Vue.js 3</a>.
 </p>
 
-<p align="center">
-    <a href="https://twitter.com/intent/follow?screen_name=bagistoshop"><img src="https://img.shields.io/twitter/follow/bagistoshop?style=social"></a>
-    <a href="https://www.youtube.com/channel/UCbrfqnhyiDv-bb9QuZtonYQ"><img src="https://img.shields.io/youtube/channel/subscribers/UCbrfqnhyiDv-bb9QuZtonYQ?style=social"></a>
-</p>
+---
 
-<p align="center">
-    ➡️ <a href="https://bagisto.com/en/">Website</a> | <a href="https://devdocs.bagisto.com/">Documentation</a> | <a href="https://devdocs.bagisto.com/2.3/introduction/installation.html#installation">Installation Guide</a> | <a href="https://devdocs.bagisto.com/2.3/introduction/docker.html">Docker Installation</a>  | <a href="https://forums.bagisto.com/">Forums</a> | <a href="https://www.facebook.com/groups/bagisto/">Community</a> ⬅️
-</p>
+## Table of Contents
 
-<p align="center">
-    <img src="https://flagicons.lipis.dev/flags/4x3/ar.svg" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/de.svg" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/us.svg" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/es.svg" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/ir.svg" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/it.svg" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/nl.svg" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/pl.svg" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/pt.svg" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/tr.svg" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/eg.svg" width="24" style="display:block; margin:6px auto;">
-    <img src="https://flagicons.lipis.dev/flags/4x3/cn.svg" width="24" style="display:block; margin:6px auto;">
-</p>
+- [About Contrast](#about-contrast)
+- [Tech Stack](#tech-stack)
+- [System Requirements](#system-requirements)
+- [Installation Guide (Windows / Laragon)](#installation-guide-windows--laragon)
+  - [1. Install Laragon](#1-install-laragon)
+  - [2. Install Composer](#2-install-composer)
+  - [3. Install Node.js & npm](#3-install-nodejs--npm)
+  - [4. Install Git](#4-install-git)
+  - [5. Verify everything is installed](#5-verify-everything-is-installed)
+  - [6. Clone the project](#6-clone-the-project)
+  - [7. Configure environment](#7-configure-environment)
+  - [8. Create the database](#8-create-the-database)
+  - [9. Install PHP dependencies](#9-install-php-dependencies)
+  - [10. Run the Contrast installer](#10-run-the-contrast-installer)
+  - [11. Build front-end assets](#11-build-front-end-assets)
+  - [12. Start the development server](#12-start-the-development-server)
+- [Installation Guide (macOS / Linux)](#installation-guide-macos--linux)
+- [Default Admin Credentials](#default-admin-credentials)
+- [Common Commands](#common-commands)
+- [Project Structure](#project-structure)
+- [Troubleshooting](#troubleshooting)
+- [License](#license)
 
-<a href="https://www.youtube.com/watch?v=OHbte7hdxYU">
-    <img class="flag-img" src="https://raw.githubusercontent.com/bagisto/temp-media/master/bagisto-featured.png" alt="Chinese" width="100%">
-</a>
+---
 
-# Introduction
+## About Contrast
 
-Bagisto is an opensource [laravel eCommerce](https://www.bagisto.com/) framework built on some of the hottest technologies such as [Laravel](https://laravel.com/) (a [PHP](https://secure.php.net/) framework) and [Vue.js](https://vuejs.org/) a progressive Javascript framework.
+Contrast is a feature-rich, modular, open-source eCommerce platform. It ships with a multi-store admin panel, a customer-facing storefront, multi-currency and multi-locale support, a flexible attribute and product system, and a plugin architecture you can extend without modifying core code.
 
-Bagisto can help you cut down your time, cost, and workforce for building online stores or migrating from physical stores to the ever-demanding online world. Your business—whether small or huge—can benefit. The best part, it's straightforward to set it up!
+## Tech Stack
 
-![Repo Stats](https://raw.githubusercontent.com/bagisto/temp-media/master/stats.webp)
+| Layer       | Technology                          |
+|-------------|-------------------------------------|
+| Backend     | PHP 8.3+, Laravel 12                |
+| Frontend    | Vue.js 3, Tailwind CSS 3, Vite 5    |
+| Database    | MySQL 8.0+ / MariaDB 10.6+          |
+| Testing     | Pest 3 (PHP), Playwright (E2E)      |
+| Tooling     | Composer 2, Node.js 18+, npm        |
 
-# Getting Started
+## System Requirements
 
-![Getting Started](https://raw.githubusercontent.com/bagisto/temp-media/master/geting-starded.png)
+Before installing Contrast you need the following on your machine:
 
-[Install Bagisto](https://devdocs.bagisto.com/2.3/introduction/installation.html#install-using-gui-installer) with or without Composer (Check [Requirement Details](https://bagisto.com/en/download/))
+- **PHP 8.3 or higher** with these extensions enabled: `bcmath`, `ctype`, `curl`, `dom`, `fileinfo`, `gd`, `intl`, `json`, `mbstring`, `openssl`, `pdo`, `pdo_mysql`, `tokenizer`, `xml`, `zip`, `exif`
+- **MySQL 8.0+** (or MariaDB 10.6+)
+- **Composer 2.x**
+- **Node.js 18+** and **npm 9+**
+- **Git**
+- A web server (Apache or Nginx) — Laragon provides this on Windows
 
-Follow the [Getting Started with Bagisto](https://www.youtube.com/watch?v=s_DhQrjK8Tw&list=PLe30vg_FG4OS3BU8rHUKQZ2mnX45xwSMc) Tutorial
+---
 
-You can browse through the Free [Live Demo](https://demo.bagisto.com/)
+## Installation Guide (Windows / Laragon)
 
-## ☁️ Cloud Installation via Amazon AMI
+This is the recommended path on Windows. Laragon bundles Apache, Nginx, MySQL, and PHP into one easy-to-manage stack.
 
-You can also deploy Bagisto quickly using our pre-configured Amazon Machine Image (AMI) available on the AWS Marketplace:
+### 1. Install Laragon
 
-👉 [**Launch Bagisto on AWS**](https://aws.amazon.com/marketplace/pp/prodview-r3xv62axcqkpa)
+Laragon is a portable, isolated Windows development environment that bundles Apache/Nginx, MySQL, PHP, and a friendly UI.
 
-This AMI allows you to get started with Bagisto on a cloud environment without manual setup. Ideal for scalable production or testing environments.
+1. Download **Laragon Full** from the official site: <https://laragon.org/download/>
+2. Run the installer and accept the defaults. Laragon installs to `C:\laragon` by default.
+3. Open Laragon and click **Start All**. You should see Apache and MySQL turn green.
+4. Right-click the Laragon window → **PHP → Version** and confirm **PHP 8.3** (or newer) is selected. If it isn't, download a PHP 8.3 build, drop it into `C:\laragon\bin\php\`, then pick it from the menu.
+5. Right-click the Laragon window → **MySQL → Version** and confirm MySQL 8.0+ is selected.
 
-# Accelerate Your Online Store Launch with the Bagisto Starter Pack!
+> Tip: enable **Auto Virtual Hosts** under **Menu → Preferences** so Laragon automatically wires up a `*.test` domain for any folder you create in `C:\laragon\www\`.
 
-Empower your e-commerce journey with the [Bagisto Starter Pack](https://store.webkul.com/bagisto-starter-pack.html), streamlining setup and integration for a seamless online store launch. Get ready to unlock success in the digital marketplace! 
+### 2. Install Composer
 
-# Open Source B2B eCommerce Platform
+Composer is the PHP dependency manager. Contrast uses it to install Laravel and all of Contrast's modular packages.
 
-The [B2B eCommerce Platform](https://bagisto.com/en/b2b-commerce-platform/) enhances your Bagisto store with advanced Business-to-Business (B2B) features. It enables company-based purchasing, multi-user access, quote negotiation, and procurement management — empowering businesses to handle B2B workflows efficiently within a single platform.
+1. Download the Windows installer: <https://getcomposer.org/Composer-Setup.exe>
+2. Run it. When asked, point it at the PHP binary Laragon uses, e.g. `C:\laragon\bin\php\php-8.3.x-Win32-vs16-x64\php.exe`.
+3. Tick **Add to PATH** and finish the installer.
+4. Open a new terminal (Laragon → **Menu → Terminal**) and run:
 
-![Bagisto B2B Ecommerce Image](https://github.com/bagisto/temp-media/blob/master/intro-banner.webp)
+   ```bash
+   composer --version
+   ```
 
-# Multi Vendor Marketplace
+   You should see `Composer version 2.x.x`.
 
-[Multi Vendor Marketplace](https://bagisto.com/en/laravel-multi-vendor-marketplace/) transforms a standard store into a complete marketplace, allowing the admin to manage sellers, commissions, product approvals, and order handling, while giving vendors a dedicated dashboard to manage their catalog, orders, and transactions.
+### 3. Install Node.js & npm
 
-![Multi Vendor Marketplace Image](https://github.com/bagisto/temp-media/blob/master/multi-vendor-marketplace.webp)
+Node.js powers the Vite build that produces the admin and shop front-end bundles.
 
-# Multi Tenant eCommerce
+1. Download the **LTS** installer (18.x or newer) from <https://nodejs.org/>
+2. Run it with default settings — npm is bundled.
+3. Verify in a terminal:
 
-[Multi Tenant eCommerce](https://bagisto.com/en/laravel-multi-tenant-saas/) in Bagisto allows businesses to build a SaaS-based marketplace platform where multiple vendors or merchants can create and manage their own individual stores under a single system.
+   ```bash
+   node --version
+   npm --version
+   ```
 
-![Multi Tenant eCommerce Image](https://github.com/bagisto/temp-media/blob/master/multi-tenant.webp)
+### 4. Install Git
 
-# POS 
+Git is required to clone the project and pull updates.
 
-[Point of Sale](https://bagisto.com/en/laravel-pos/) system manages retail operations efficiently, handling inventory management and fast customer checkout for your store.
+1. Download Git for Windows: <https://git-scm.com/download/win>
+2. Run the installer (defaults are fine).
+3. Verify:
 
-![POS Image](https://github.com/bagisto/temp-media/blob/master/pos.webp)
+   ```bash
+   git --version
+   ```
 
-# Headless Commerce
+### 5. Verify everything is installed
 
-The power of headless laravel commerce now comes to Bagisto enabling you to experience seamless and easily scalable storefront performance. Backed by some of the hottest tech stacks, Bagisto commerce can now be used to build powerful headless commerce solutions offering blazing-fast speed and easy customization powered by Next.js
+Open a fresh terminal and run all four checks:
 
-## Next.js Commerce
+```bash
+php --version       # should print PHP 8.3.x or newer
+composer --version  # 2.x.x
+node --version      # v18 or newer
+git --version       # any recent version
+```
 
-![Next.js Logo](https://raw.githubusercontent.com/bagisto/temp-media/master/next.png)
+If any command says "not found", reopen the terminal — installers often need a restart to update `PATH`.
 
-Develop and deploy your next headless commerce storefronts with Next JS and Bagisto: [https://github.com/bagisto/nextjs-commerce](https://github.com/bagisto/nextjs-commerce)
+### 6. Clone the project
 
-# Open Source Mobile eCommerce
+If you haven't cloned the repo yet:
 
-Revolutionize Your Online Store with Bagisto's Open Source eCommerce Mobile 
+```bash
+cd C:\laragon\www\laravel
+git clone <your-repo-url> e-commerce
+cd e-commerce
+```
 
-![Mobile View Example Screens](https://raw.githubusercontent.com/bagisto/temp-media/master/open-source-ecommerce-mobile.png)
+If the project is already in `C:\laragon\www\laravel\e-commerce`, just open Laragon → **Menu → www** and navigate into it.
 
-Mobile eCommerce powered by Flutter & Laravel: https://github.com/bagisto/opensource-ecommerce-mobile-app
+### 7. Configure environment
 
-# AI Powered eCommerce
+Create your local `.env` file from the template:
 
-You can integrate popular large language models like GPT-5, Gemini 3, Mistral, and LLaMA 4, Grok (xAI),GLM 4.6,Kimi-K2, Qwen 3, Deepseek etc to build [AI-powered eCommerce](https://bagisto.com/en/extensions/laravel-chatbot-using-openai-chatgpt-llm/) applications with Bagisto. Some of the popular use cases where you can make use of LLMs to build AI apps are chatbot, automated product descriptions, customer support, search, and recommendations.
+```bash
+copy .env.example .env
+```
 
-![AI Powered eCommerce Examples](https://raw.githubusercontent.com/bagisto/temp-media/master/ai_powered_ecommerce.png)
+Open `.env` and update at least these entries:
 
-You can incorporate LLM API with your bagisto applications to send and receive queries and ensure proper error handling and rate limiting to prevent overuse of the API
+```ini
+APP_NAME=Contrast
+APP_URL=http://e-commerce.test
 
-# Decentralised eCommerce
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=contrast
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
-Build [decentralised applications](https://bagisto.com/en/services/blockchain-commerce/) with Bagisto on popular blockchains like Ethereum and Solana by integrating smart contracts with the eCommerce platform. You can have decentralised marketplaces, [NFT marketplaces](https://bagisto.com/en/nft-marketplace/), and decentralised e-signing with the laravel eCommerce system.
+Laragon's default MySQL user is `root` with **no password**.
 
-![Decentralized Ecommerce Example Screens](https://raw.githubusercontent.com/bagisto/temp-media/master/decentralised-ecommerce.png)
+### 8. Create the database
 
-# Commerce For Every Need
+Open Laragon → **Menu → MySQL → HeidiSQL** (or use any MySQL client) and run:
 
-![Commerce Store Examples](https://raw.githubusercontent.com/bagisto/temp-media/master/every-need.png)
+```sql
+CREATE DATABASE contrast CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+```
 
-With Bagisto, you can easily create use cases for various commerce needs like Marketplaces, PWA, Native Mobile Apps, Multi-Tenants systems, Blockchain and many more.
+Or via the command line:
 
-# Built In Extensions
+```bash
+mysql -u root -e "CREATE DATABASE contrast CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;"
+```
 
-![200+ Prebuilt Extensions](https://raw.githubusercontent.com/bagisto/temp-media/master/built_in_extension.png)
+### 9. Install PHP dependencies
 
-Make use of 100+ Bagisto pre-built extensions from [Bagisto Extension Markeptlace](https://bagisto.com/en/extensions/)
+From the project folder (`C:\laragon\www\laravel\e-commerce`):
 
-# Community
+```bash
+composer install
+```
 
-![Forum and Facebook Communities](https://raw.githubusercontent.com/bagisto/temp-media/master/community.png)
+This pulls in Laravel, all of Contrast's modular packages (located under `packages/`), and dev tools like Pest. Expect 2–5 minutes on a fresh install.
 
-Get Bagisto support on [Facebook Group](https://www.facebook.com/groups/bagisto) and [Forum](https://forums.bagisto.com/)
-Would like to help us build the most developer-friendly E-Commerce platform? Start by reading our [Contributing Guide](https://github.com/bagisto/bagisto/blob/master/.github/CONTRIBUTING.md)!
+### 10. Run the Contrast installer
 
-# License
-Bagisto is a fully open-source Laravel eCommerce framework that will always remain free under the [MIT License](https://github.com/bagisto/bagisto/blob/master/LICENSE).
+Contrast ships with a one-shot artisan command that runs migrations, seeds the catalog/locale defaults, generates an app key, and publishes assets:
 
-# Security Vulnerabilities
-If you think that you have found a security issue in Bagisto, please do not use the issue tracker and do not post it publicly. Instead, all security issues must be sent to [mailto:support@bagisto.com](mailto:support@bagisto.com).
+```bash
+php artisan contrast:install
+```
 
-# Contributors
+You'll be prompted for a default admin email and password during the run.
 
-This project is on [Open Collective](https://opencollective.com/bagisto), and it exists thanks to the people who contribute.
+> **Note:** Some legacy artisan commands still use the upstream framework name. If `php artisan contrast:install` is not yet registered in your build, run `php artisan bagisto:install` instead — it executes the same routine. The same applies to `bagisto:translations:check`. These will be aliased to `contrast:*` in a future cleanup pass.
 
-<a href="https://github.com/bagisto/bagisto/graphs/contributors"><img src="https://opencollective.com/bagisto/contributors.svg?width=890&button=false"/></a>
+### 11. Build front-end assets
 
-# Backers
+Each of the three front-end bundles (Admin, Shop, Installer) has its own Vite build. Build them once for production, or run `dev` for hot-reloading while developing.
 
-Thank you to all our backers! 🙏
+```bash
+# Admin panel
+cd packages/Webkul/Admin
+npm install
+npm run build      # or: npm run dev
 
-<a href="https://opencollective.com/bagisto" target="_blank"><img src="https://opencollective.com/bagisto/backers.svg?width=890"></a>
+# Storefront
+cd ../Shop
+npm install
+npm run build      # or: npm run dev
 
-# Sponsors
+# Installer (only needed if you customize the install wizard)
+cd ../Installer
+npm install
+npm run build
+```
 
-Support this project by becoming a sponsor. Your logo will show up here with a link to your website.
+Outputs land in `public/themes/admin/default/build/` and `public/themes/shop/default/build/`.
 
-<a href="https://opencollective.com/bagisto" target="_blank"><img src="https://opencollective.com/bagisto/sponsors.svg?width=890&isActive=true"></a>
+### 12. Start the development server
+
+From the project root:
+
+```bash
+php artisan serve
+```
+
+Open <http://127.0.0.1:8000> for the storefront and <http://127.0.0.1:8000/admin/login> for the admin panel.
+
+If you have Laragon's auto virtual hosts enabled, you can also visit <http://e-commerce.test> directly.
+
+---
+
+## Installation Guide (macOS / Linux)
+
+The dependency list is the same — you just install each piece through your platform's package manager:
+
+```bash
+# macOS (Homebrew)
+brew install php@8.3 composer node mysql git
+brew services start mysql
+
+# Ubuntu / Debian
+sudo apt update
+sudo apt install -y php8.3 php8.3-cli php8.3-mbstring php8.3-xml php8.3-curl \
+                    php8.3-mysql php8.3-zip php8.3-gd php8.3-intl php8.3-bcmath \
+                    composer nodejs npm mysql-server git
+```
+
+Then follow steps 6–12 above. Use `cp .env.example .env` instead of `copy`.
+
+---
+
+## Default Admin Credentials
+
+After running the installer, the default admin login is:
+
+- **URL:** <http://127.0.0.1:8000/admin/login>
+- **Email:** `admin@example.com`
+- **Password:** `admin123`
+
+Change these immediately in **Settings → Users** after first login.
+
+---
+
+## Common Commands
+
+```bash
+# Clear all caches (run after config or code changes)
+php artisan optimize:clear
+
+# Run the test suite (Pest)
+vendor/bin/pest
+vendor/bin/pest --testsuite="Admin Feature Test"
+
+# Check / fix code style (Laravel Pint)
+vendor/bin/pint --test
+vendor/bin/pint
+
+# Translation file validation
+php artisan contrast:translations:check    # falls back to: bagisto:translations:check
+
+# Re-seed the database (destructive — drops & recreates)
+php artisan migrate:fresh --seed
+```
+
+### End-to-end (Playwright) tests
+
+Run from each package's directory:
+
+```bash
+cd packages/Webkul/Admin
+npm install
+npx playwright install --with-deps chromium
+npx playwright test --config=tests/e2e-pw/playwright.config.ts
+```
+
+Repeat for `packages/Webkul/Shop` if needed. Playwright tests require `php artisan serve` running and a seeded database.
+
+---
+
+## Project Structure
+
+```
+e-commerce/
+├── app/                      # Laravel application skeleton
+├── bootstrap/providers.php   # Service provider registry
+├── config/concord.php        # Module/concord registry
+├── packages/Webkul/          # ~42 modular packages (Admin, Shop, Catalog, ...).
+│                             # The "Webkul" path is a legacy PHP namespace —
+│                             # renaming it would break Composer autoloading.
+│   └── <Package>/src/
+│       ├── Config/           # admin-menu.php, acl.php, system.php
+│       ├── Database/         # Migrations, seeders, factories
+│       ├── Http/Controllers/ # Admin/ and Shop/ controllers
+│       ├── Models/           # Eloquent models + Proxy classes
+│       ├── Repositories/     # Data access layer
+│       ├── Resources/        # Views, lang, assets
+│       └── Routes/           # admin-routes.php, shop-routes.php
+├── public/                   # Web root, compiled assets, uploads
+├── resources/                # Top-level Laravel resources
+├── routes/                   # Top-level route files
+├── tests/                    # Pest test bootstrap
+└── README.md
+```
+
+Each package is self-contained: its own routes, views, migrations, and service providers. Add a new package with:
+
+```bash
+php artisan package:make Webkul/<Name>
+```
+
+Then register it in `bootstrap/providers.php` and `config/concord.php`.
+
+---
+
+## Troubleshooting
+
+**`php` is not recognised after installing Laragon.**
+Add `C:\laragon\bin\php\php-8.3.x-Win32-vs16-x64` to your `PATH`, or always run commands from the Laragon terminal (Menu → Terminal), which has `PATH` pre-set.
+
+**`Class "ZipArchive" not found` during `composer install`.**
+The `php_zip` extension is disabled. Open `php.ini` (Laragon → **Menu → PHP → php.ini**), uncomment `extension=zip`, then restart Laragon.
+
+**`SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost'`.**
+Laragon defaults to MySQL root with no password. Set `DB_PASSWORD=` (empty) in `.env`. If you've set a password, put it there.
+
+**Vite build fails with an out-of-memory error.**
+Bump Node's heap: `set NODE_OPTIONS=--max-old-space-size=4096` (Windows) or `export NODE_OPTIONS=--max-old-space-size=4096` (mac/Linux), then re-run `npm run build`.
+
+**Admin panel loads but styles are missing.**
+You forgot step 11 — run `npm run build` inside `packages/Webkul/Admin` and `packages/Webkul/Shop`.
+
+**Permission errors when writing to `storage/` or `bootstrap/cache/` (Linux/macOS).**
+
+```bash
+chmod -R 775 storage bootstrap/cache
+chown -R $USER:www-data storage bootstrap/cache
+```
+
+---
+
+## License
+
+Contrast is open-source software released under the [MIT License](LICENSE).
